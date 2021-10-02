@@ -75,8 +75,12 @@ export default function HideAppBar(props) {
                         display: whatWe ? "block" : "none",
                         zIndex: theme.zIndex.appBar + 1,
                         backgroundColor: theme.palette.background.paper,
+                        padding: 2,
                       }}
                     >
+                      <Box>
+                        <Typography></Typography>
+                      </Box>
                       <Box>
                         <Link underline={"none"}>Full Account Management</Link>
                       </Box>
