@@ -121,12 +121,40 @@ export default function HideAppBar(props) {
                       ))}
                     </Box>
                   </Box>
-                  <Button padding={1} color={"inherit"}>
-                    Who We Are
-                  </Button>
-                  <Button padding={1} color={"inherit"}>
-                    Our Clients
-                  </Button>
+                  <Box className={"dropdown"}>
+                    <Button padding={1} color={"inherit"}>
+                      Who We Are
+                    </Button>
+                    <Box className="dropdown-content">
+                      <Box>
+                        <Typography>AMAZON SERVICES</Typography>
+                      </Box>
+                      {amazonArr?.map((ama, index) => (
+                        <Box key={`${index}-amazon-services-${ama?.id}`}>
+                          <Link href={"#"} underline={"none"}>
+                            {ama?.title}
+                          </Link>
+                        </Box>
+                      ))}
+                    </Box>
+                  </Box>
+                  <Box className={"dropdown"}>
+                    <Button padding={1} color={"inherit"}>
+                      Our Clients
+                    </Button>
+                    <Box className="dropdown-content">
+                      <Box>
+                        <Typography>AMAZON SERVICES</Typography>
+                      </Box>
+                      {amazonArr?.map((ama, index) => (
+                        <Box key={`${index}-amazon-services-${ama?.id}`}>
+                          <Link href={"#"} underline={"none"}>
+                            {ama?.title}
+                          </Link>
+                        </Box>
+                      ))}
+                    </Box>
+                  </Box>
                   <Box padding={1}>
                     <Link color={"inherit"} href={"/"} underline={"none"}>
                       Blog
