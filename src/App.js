@@ -1,7 +1,6 @@
 import React from "react";
 
 //package import
-
 import { BrowserRouter as Router } from "react-router-dom";
 import { Toolbar, Container } from "@mui/material";
 
@@ -16,6 +15,7 @@ const App = () => {
   //render
 
   return (
+    <>
     <Router>
       <Topbar />
       <Toolbar />
@@ -24,6 +24,7 @@ const App = () => {
       </Container>
       <Footer />
     </Router>
+    </>
   );
 };
 
