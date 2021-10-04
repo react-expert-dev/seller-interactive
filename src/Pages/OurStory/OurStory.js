@@ -146,6 +146,72 @@ const OurStory = () => {
           </Grid>
           <Grid xs={2}></Grid>
         </Grid>
+        <Grid container spacing={2}>
+        <Grid item xs={4}>
+         
+        </Grid>
+        <Grid item xs={4}>
+        <Typography
+              variant="subtitle1"
+              gutterBottom
+              component="div"
+              sx={{
+                marginTop: "5%",
+                fontSize: 16,
+                fontWeight: 400,
+                textAlign: "center",
+              }}  >
+              Our Partners
+            </Typography>{" "}
+        </Grid>
+        <Grid item xs={4}>
+        
+        </Grid>
+    
+      </Grid>
+        <Grid container spacing={1}>
+        <Grid item xs={1}>
+  
+        </Grid>
+        <Grid item xs={2}>
+        <img
+              src={"/ourstory3.png"}
+              width={"100%"}
+              alt={"Addian Management"}
+            />
+        </Grid>
+        <Grid item xs={2} sx={{marginTop:"3.5%"}}>
+        <img
+              src={"/ourstory4.png"}
+              width={"100%"}
+              alt={"Addian Management"}
+            />
+        </Grid>
+        <Grid item xs={2} sx={{marginTop:"2.5%"}}>
+        <img
+              src={"/ourstory5.png"}
+              width={"100%"}
+              alt={"Addian Management"}
+            />
+        </Grid>
+        <Grid item xs={2}>
+        <img
+              src={"/ourstory6.png"}
+              width={"100%"}
+              alt={"Addian Management"}
+            />
+        </Grid>
+        <Grid item xs={2} sx={{marginTop:"0.5%"}}>
+        <img
+              src={"/ourstory7.png"}
+              width={"100%"}
+              alt={"Addian Management"}
+            />
+        </Grid>
+        <Grid item xs={1}>
+ 
+        </Grid>
+      </Grid>
       </Box>{" "}
     </div>
   );
