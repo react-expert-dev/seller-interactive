@@ -26,7 +26,9 @@ const OurStory = () => {
       >
         <Grid
           item
-          xs={6}
+          xs={12}
+          sm={12}
+          md={6}
           sx={{
             marginTop: "5%",
           }}
@@ -72,7 +74,9 @@ const OurStory = () => {
         </Grid>
         <Grid
           item
-          xs={6}
+          xs={12}
+          sm={12}
+          md={6}
           sx={{
             marginTop: "5%",
           }}
@@ -86,7 +90,7 @@ const OurStory = () => {
       </Grid>
       <Grid container spacing={2}>
         <Grid item xs={2}></Grid>
-        <Grid item xs={8}>
+        <Grid item xs={12} sm={12} md={8}>
           <Typography
             variant="subtitle1"
             gutterBottom
@@ -192,6 +196,64 @@ const OurStory = () => {
           </Typography>
         </Grid>
         <Grid xs={2}></Grid>
+      </Grid>
+      <Grid container spacing={2}>
+        <Grid item xs={4}></Grid>
+        <Grid item xs={12} sm={12} md={4}>
+          <Typography
+            variant="subtitle1"
+            gutterBottom
+            component="div"
+            sx={{
+              marginTop: "5%",
+              fontSize: 16,
+              fontWeight: 400,
+              textAlign: "center",
+            }}
+          >
+            Our Partners
+          </Typography>{" "}
+        </Grid>
+        <Grid item xs={4}></Grid>
+      </Grid>
+      <Grid container spacing={1}>
+        <Grid item xs={1}></Grid>
+        <Grid item xs={2}>
+          <img
+            src={"/ourstory3.png"}
+            width={"100%"}
+            alt={"Addian Management"}
+          />
+        </Grid>
+        <Grid item xs={2} sx={{ marginTop: "3%" }}>
+          <img
+            src={"/ourstory4.png"}
+            width={"100%"}
+            alt={"Addian Management"}
+          />
+        </Grid>
+        <Grid item xs={2} sx={{ marginTop: "2.5%" }}>
+          <img
+            src={"/ourstory5.png"}
+            width={"100%"}
+            alt={"Addian Management"}
+          />
+        </Grid>
+        <Grid item xs={2}>
+          <img
+            src={"/ourstory6.png"}
+            width={"100%"}
+            alt={"Addian Management"}
+          />
+        </Grid>
+        <Grid item xs={2} sx={{ marginTop: "0.5%" }}>
+          <img
+            src={"/ourstory7.png"}
+            width={"100%"}
+            alt={"Addian Management"}
+          />
+        </Grid>
+        <Grid item xs={1}></Grid>
       </Grid>
     </Box>
   );
