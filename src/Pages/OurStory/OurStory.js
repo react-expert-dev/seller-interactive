@@ -20,7 +20,7 @@ const OurStory = () => {
           }} >
           <Grid
             item
-            xs={6}
+            xs={12} sm={12} md={6}
             sx={{
               marginTop: "5%",
             }} >
@@ -65,7 +65,7 @@ const OurStory = () => {
           </Grid>{" "}
           <Grid
             item
-            xs={6}
+            xs={12} sm={12} md={6}
             sx={{
               marginTop: "5%",
             }} >
@@ -78,7 +78,7 @@ const OurStory = () => {
         </Grid>{" "}
         <Grid container spacing={2}>
           <Grid item xs={2}></Grid>
-          <Grid item xs={8}>
+          <Grid item xs={12} sm={12} md={8}>
             <Typography
               variant="subtitle1"
               gutterBottom
@@ -150,7 +150,7 @@ const OurStory = () => {
         <Grid item xs={4}>
          
         </Grid>
-        <Grid item xs={4}>
+        <Grid item xs={12} sm={12} md={4} >
         <Typography
               variant="subtitle1"
               gutterBottom
@@ -180,7 +180,7 @@ const OurStory = () => {
               alt={"Addian Management"}
             />
         </Grid>
-        <Grid item xs={2} sx={{marginTop:"3.5%"}}>
+        <Grid item xs={2} sx={{marginTop:"3%"}}>
         <img
               src={"/ourstory4.png"}
               width={"100%"}
