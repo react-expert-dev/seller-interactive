@@ -1,6 +1,6 @@
 //user import
 
-import { Home, Blog, OurStory } from "./Pages";
+import { Home, Blog, OurStory, CaseStudies, Testimonials } from "./Pages";
 import { Root_Routes } from "./Services/Routes/APP";
 
 export const routes = [
@@ -20,6 +20,18 @@ export const routes = [
     id: 103,
     path: Root_Routes?.ourstory,
     page: OurStory,
+    exact: true,
+  },
+  {
+    id: 104,
+    path: Root_Routes?.testimonials,
+    page: Testimonials,
+    exact: true,
+  },
+  {
+    id: 105,
+    path: Root_Routes?.case_studies,
+    page: CaseStudies,
     exact: true,
   },
 ];
