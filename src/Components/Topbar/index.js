@@ -18,22 +18,71 @@ import { Phone as PhoneIcon } from "@mui/icons-material";
 
 import { HideOnScroll } from "./HideOnScroll";
 
+//constants
+
+const amazonArr = [
+  {
+    id: 31,
+    title: "Full Account Management",
+    icon: "",
+  },
+  {
+    id: 32,
+    title: "Search Engine Optimization (SEO)",
+    icon: "",
+  },
+  {
+    id: 33,
+    title: "Sponsored Ads Management (PPC)",
+    icon: "",
+  },
+  {
+    id: 34,
+    title: "Product Launch",
+    icon: "",
+  },
+  {
+    id: 35,
+    title: "Listing Optimization",
+    icon: "",
+  },
+  {
+    id: 36,
+    title: "Brand Protection & Assistance",
+    icon: "",
+  },
+  {
+    id: 37,
+    title: "Account Suspension Appeal & Reinstatement",
+    icon: "",
+  },
+  {
+    id: 38,
+    title: "Reimbursement & Refund",
+    icon: "",
+  },
+  {
+    id: 39,
+    title: "FBA Wholesale Partnership Program",
+    icon: "",
+  },
+  {
+    id: 40,
+    title: "Amazon Demand-Side Platform Advertising",
+    icon: "",
+  },
+];
+
 //component
 
 export default function HideAppBar(props) {
   //states
-
-  const [whatWe, setWhatWe] = useState(false);
 
   //hooks
 
   const theme = useTheme();
 
   //show what we Do
-
-  const whatWeHandler = () => {
-    setWhatWe(!whatWe);
-  };
 
   return (
     <Fragment>
@@ -54,53 +103,58 @@ export default function HideAppBar(props) {
                       alt={"Addian Management"}
                     />
                   </Box>
-                  <Box
-                    sx={{
-                      position: "relative",
-                      display: "inline-block",
-                    }}
-                  >
-                    <Button
-                      padding={1}
-                      color={"inherit"}
-                      onMouseEnter={whatWeHandler}
-                      onMouseLeave={whatWeHandler}
-                    >
+                  <Box className={"dropdown"}>
+                    <Button padding={1} color={"inherit"} className={"dropbtn"}>
                       What We Do
                     </Button>
 
-                    <Box
-                      sx={{
-                        position: "absolute",
-                        display: whatWe ? "block" : "none",
-                        zIndex: theme.zIndex.appBar + 1,
-                        backgroundColor: theme.palette.background.paper,
-                        padding: 2,
-                      }}
-                    >
+                    <Box className="dropdown-content">
                       <Box>
-                        <Typography></Typography>
+                        <Typography>AMAZON SERVICES</Typography>
                       </Box>
-                      <Box>
-                        <Link underline={"none"}>Full Account Management</Link>
-                      </Box>
-                      <Box>
-                        <Link underline={"none"}> Full Account Management</Link>
-                      </Box>
-                      <Box>
-                        <Link underline={"none"}>Full Account Management</Link>
-                      </Box>
-                      <Box>
-                        <Link underline={"none"}>Full Account Management</Link>
-                      </Box>
+                      {amazonArr?.map((ama, index) => (
+                        <Box key={`${index}-amazon-services-${ama?.id}`}>
+                          <Link href={"#"} underline={"none"}>
+                            {ama?.title}
+                          </Link>
+                        </Box>
+                      ))}
                     </Box>
                   </Box>
-                  <Button padding={1} color={"inherit"}>
-                    Who We Are
-                  </Button>
-                  <Button padding={1} color={"inherit"}>
-                    Our Clients
-                  </Button>
+                  <Box className={"dropdown"}>
+                    <Button padding={1} color={"inherit"}>
+                      Who We Are
+                    </Button>
+                    <Box className="dropdown-content">
+                      <Box>
+                        <Typography>AMAZON SERVICES</Typography>
+                      </Box>
+                      {amazonArr?.map((ama, index) => (
+                        <Box key={`${index}-amazon-services-${ama?.id}`}>
+                          <Link href={"#"} underline={"none"}>
+                            {ama?.title}
+                          </Link>
+                        </Box>
+                      ))}
+                    </Box>
+                  </Box>
+                  <Box className={"dropdown"}>
+                    <Button padding={1} color={"inherit"}>
+                      Our Clients
+                    </Button>
+                    <Box className="dropdown-content">
+                      <Box>
+                        <Typography>AMAZON SERVICES</Typography>
+                      </Box>
+                      {amazonArr?.map((ama, index) => (
+                        <Box key={`${index}-amazon-services-${ama?.id}`}>
+                          <Link href={"#"} underline={"none"}>
+                            {ama?.title}
+                          </Link>
+                        </Box>
+                      ))}
+                    </Box>
+                  </Box>
                   <Box padding={1}>
                     <Link color={"inherit"} href={"/"} underline={"none"}>
                       Blog
