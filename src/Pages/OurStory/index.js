@@ -78,6 +78,7 @@ const OurStory = () => {
           }}
         >
           <img
+          style={{borderRadius:"2%"}}
             src={"/ourstory1.jpg"}
             width={"100%"}
             alt={"Addian Management"}
@@ -93,6 +94,7 @@ const OurStory = () => {
             component="div"
             sx={{
               marginTop: 8,
+              marginBottom: 5,
               fontWeight: 800,
               textAlign: "center",
             }}
@@ -100,6 +102,7 @@ const OurStory = () => {
             We started by turning $2,500 into multiple 7-figure brands.
           </Typography>
           <img
+          style={{borderRadius:"2%"}}
             src={"/ourstory2.jpg"}
             width={"100%"}
             alt={"Addian Management"}
