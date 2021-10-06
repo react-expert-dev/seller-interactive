@@ -30,19 +30,16 @@ const OurStory = () => {
           sm={12}
           md={6}
           sx={{
-            marginTop: "5%",
+            marginTop: 8,
           }}
         >
           <Typography
-            variant="subtitle1"
+            variant="h3"
             gutterBottom
             component="div"
             sx={{
-              fontSize: 48,
-              fontWeight: 800,
-              fontFamily: "arial",
               marginTop: 10,
-              color: "black",
+              fontWeight:800,
             }}
           >
             Our Story.
@@ -64,8 +61,7 @@ const OurStory = () => {
           <Button
             variant="contained"
             sx={{
-              marginTop: "5%",
-              backgroundColor: "#fb3767",
+              marginTop: 5,
               borderRadius: 2,
             }}
           >
@@ -78,10 +74,11 @@ const OurStory = () => {
           sm={12}
           md={6}
           sx={{
-            marginTop: "5%",
+            marginTop: 10,
           }}
         >
           <img
+          style={{borderRadius:"2%"}}
             src={"/ourstory1.jpg"}
             width={"100%"}
             alt={"Addian Management"}
@@ -92,12 +89,12 @@ const OurStory = () => {
         <Grid item xs={2}></Grid>
         <Grid item xs={12} sm={12} md={8}>
           <Typography
-            variant="subtitle1"
+            variant="h4"
             gutterBottom
             component="div"
             sx={{
-              marginTop: "5%",
-              fontSize: 38,
+              marginTop: 8,
+              marginBottom: 5,
               fontWeight: 800,
               textAlign: "center",
             }}
@@ -105,6 +102,7 @@ const OurStory = () => {
             We started by turning $2,500 into multiple 7-figure brands.
           </Typography>
           <img
+          style={{borderRadius:"2%"}}
             src={"/ourstory2.jpg"}
             width={"100%"}
             alt={"Addian Management"}
@@ -113,7 +111,7 @@ const OurStory = () => {
             variant="subtitle1"
             gutterBottom
             component="div"
-            sx={{ marginTop: "7%", fontSize: 16, fontWeight: 400 }}
+            sx={{ marginTop: 8, fontWeight: 400 }}
           >
             Starting with a few thousand dollars in 2014, we have gone through
             all the mistakes possible in the world of Amazon ranging from
@@ -126,7 +124,7 @@ const OurStory = () => {
             variant="subtitle1"
             gutterBottom
             component="div"
-            sx={{ marginTop: "3%", fontSize: 16, fontWeight: 400 }}
+            sx={{ marginTop: 3, fontWeight: 400 }}
           >
             We often get asked why we want to help others sell well on Amazon.
             Why not just keep selling more of our products?
@@ -135,7 +133,7 @@ const OurStory = () => {
             variant="subtitle1"
             gutterBottom
             component="div"
-            sx={{ marginTop: "3%", fontSize: 16, fontWeight: 400 }}
+            sx={{ marginTop: 3, fontWeight: 400 }}
           >
             We always respond the same way – Why not do both?
           </Typography>
@@ -143,7 +141,7 @@ const OurStory = () => {
             variant="subtitle1"
             gutterBottom
             component="div"
-            sx={{ marginTop: "3%", fontSize: 16, fontWeight: 400 }}
+            sx={{ marginTop: 3, fontWeight: 400 }}
           >
             We continue to sell our own products..
           </Typography>
@@ -151,7 +149,7 @@ const OurStory = () => {
             variant="subtitle1"
             gutterBottom
             component="div"
-            sx={{ marginTop: "3%", fontSize: 16, fontWeight: 400 }}
+            sx={{ marginTop: 3, fontWeight: 400 }}
           >
             But there are countless great products out there that can positively
             impact the masses if they are managed and marketed well on Amazon.
@@ -164,7 +162,7 @@ const OurStory = () => {
             variant="subtitle1"
             gutterBottom
             component="div"
-            sx={{ marginTop: "3%", fontSize: 16, fontWeight: 400 }}
+            sx={{ marginTop: 3, fontWeight: 400 }}
           >
             Over the years, we have gained much experience and expertise and
             developed great teams and systems to be in a position to offer great
@@ -180,10 +178,9 @@ const OurStory = () => {
             gutterBottom
             component="div"
             sx={{
-              marginTop: "3%",
-              fontSize: 16,
+              marginTop: 3,
               fontWeight: 400,
-              marginBottom: "10%",
+              marginBottom: 12,
             }}
           >
             We continue to sell our own products..If you enjoy sushi, it makes
@@ -205,8 +202,6 @@ const OurStory = () => {
             gutterBottom
             component="div"
             sx={{
-              marginTop: "5%",
-              fontSize: 16,
               fontWeight: 400,
               textAlign: "center",
             }}
@@ -225,14 +220,14 @@ const OurStory = () => {
             alt={"Addian Management"}
           />
         </Grid>
-        <Grid item xs={2} sx={{ marginTop: "3%" }}>
+        <Grid item xs={2} sx={{ marginTop: 5 }}>
           <img
             src={"/ourstory4.png"}
             width={"100%"}
             alt={"Addian Management"}
           />
         </Grid>
-        <Grid item xs={2} sx={{ marginTop: "2.5%" }}>
+        <Grid item xs={2} sx={{ marginTop: 4 }}>
           <img
             src={"/ourstory5.png"}
             width={"100%"}
@@ -246,7 +241,7 @@ const OurStory = () => {
             alt={"Addian Management"}
           />
         </Grid>
-        <Grid item xs={2} sx={{ marginTop: "0.5%" }}>
+        <Grid item xs={2} sx={{ marginTop: 1 }}>
           <img
             src={"/ourstory7.png"}
             width={"100%"}
