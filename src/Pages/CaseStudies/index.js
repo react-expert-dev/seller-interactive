@@ -1,6 +1,37 @@
 import React from "react";
-import { OutlinedInput, Button, Grid, Typography, Box } from "@mui/material";
+import {
+  OutlinedInput,
+  Button,
+  Grid,
+  Typography,
+  Box,
+  useTheme,
+} from "@mui/material";
+
+//constants
+
+const successStories = [
+  {
+    id: `success-story-1`,
+    url: "/casestudy1.png",
+    imgText: "Addian Management",
+  },
+  {
+    id: `success-story-2`,
+    url: "/casestudy2.jpg",
+    imgText: "Hair Brust",
+  },
+];
+
+//component
+
 const CaseStudies = () => {
+  //hooks
+
+  const theme = useTheme();
+
+  //render
+
   return (
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
@@ -27,155 +58,38 @@ const CaseStudies = () => {
             account health) and achieve brand success.
           </Typography>
         </Grid>
-        <Grid item xs={12} md={4} lg={4}></Grid>
+        <Grid item xs={false} md={4} lg={4}></Grid>
       </Grid>
       <Grid container spacing={6} sx={{ marginTop: 3 }}>
-        <Grid item xs={4}>
-          <Box
-            sx={{ border: 1, width: "100%", height: "100%", borderRadius: 2 }}
-          >
-            <img
-              style={{
-                padding: 10,
-                width: "75%",
-                marginLeft: 30,
-                marginBottom: 20,
-                marginTop: 20,
+        {successStories?.map((sucess, index) => (
+          <Grid item xs={4} key={`${index}-success-story-${sucess?.id}`}>
+            <Box
+              sx={{
+                border: 1,
+                width: "100%",
+                height: "100%",
+                borderRadius: 2,
+                display: "flex",
+                alignItems: "center",
               }}
-              src={"/casestudy1.png"}
-              alt={"Addian Management"}
-            />
-          </Box>
-        </Grid>
-        <Grid item xs={4}>
-          <Box
-            sx={{ border: 1, width: "100%", height: "100%", borderRadius: 2 }}
-          >
-            <img
-              style={{
-                padding: 10,
-                width: "75%",
-                marginLeft: 30,
-                marginBottom: 20,
-                marginTop: 20,
-              }}
-              src={"/casestudy1.png"}
-              alt={"Addian Management"}
-            />
-          </Box>
-        </Grid>
-        <Grid item xs={4}>
-          <Box
-            sx={{ border: 1, width: "100%", height: "100%", borderRadius: 2 }}
-          >
-            <img
-              style={{
-                padding: 10,
-                width: "75%",
-                marginLeft: 30,
-                marginBottom: 20,
-                marginTop: 20,
-              }}
-              src={"/casestudy1.png"}
-              alt={"Addian Management"}
-            />
-          </Box>
-        </Grid>
-      </Grid>
-      <Grid container spacing={6} sx={{ marginTop: 3 }}>
-        <Grid item xs={4}>
-          <Box
-            sx={{ border: 1, width: "100%", height: "100%", borderRadius: 2 }}
-          >
-            <img
-              style={{
-                padding: 10,
-                width: "75%",
-                marginLeft: 30,
-                marginBottom: 20,
-                marginTop: 20,
-              }}
-              src={"/casestudy1.png"}
-              alt={"Addian Management"}
-            />
-          </Box>
-        </Grid>
-        <Grid item xs={4}>
-          <Box
-            sx={{ border: 1, width: "100%", height: "100%", borderRadius: 2 }}
-          >
-            <img
-              style={{
-                padding: 10,
-                width: "75%",
-                marginLeft: 30,
-                marginBottom: 20,
-                marginTop: 20,
-              }}
-              src={"/casestudy1.png"}
-              alt={"Addian Management"}
-            />
-          </Box>
-        </Grid>
-        <Grid item xs={4}>
-          <Box
-            sx={{ border: 1, width: "100%", height: "100%", borderRadius: 2 }}
-          >
-            <img
-              style={{
-                padding: 10,
-                width: "75%",
-                marginLeft: 30,
-                marginBottom: 20,
-                marginTop: 20,
-              }}
-              src={"/casestudy1.png"}
-              alt={"Addian Management"}
-            />
-          </Box>
-        </Grid>
+            >
+              <img
+                style={{
+                  padding: 10,
+                  width: "75%",
+                  marginLeft: 30,
+                  marginBottom: 20,
+                  marginTop: 20,
+                }}
+                src={sucess?.url}
+                alt={sucess?.imgText}
+              />
+            </Box>
+          </Grid>
+        ))}
       </Grid>
 
-      <Grid container spacing={6} sx={{ marginTop: 3, marginBottom: 5 }}>
-        <Grid item xs={1}></Grid>
-        <Grid item xs={4}>
-          <Box
-            sx={{ border: 1, width: "100%", height: "100%", borderRadius: 2 }}
-          >
-            <img
-              style={{
-                padding: 10,
-                width: "75%",
-                marginLeft: 30,
-                marginBottom: 20,
-                marginTop: 20,
-              }}
-              src={"/casestudy1.png"}
-              alt={"Addian Management"}
-            />
-          </Box>
-        </Grid>
-        <Grid item xs={2}></Grid>
-        <Grid item xs={4}>
-          <Box
-            sx={{ border: 1, width: "100%", height: "100%", borderRadius: 2 }}
-          >
-            <img
-              style={{
-                padding: 10,
-                width: "75%",
-                marginLeft: 30,
-                marginBottom: 20,
-                marginTop: 20,
-              }}
-              src={"/casestudy1.png"}
-              alt={"Addian Management"}
-            />
-          </Box>
-        </Grid>
-        <Grid item xs={1}></Grid>
-      </Grid>
-      <div style={{ width: "100%",}}>
+      <div style={{ width: "100%" }}>
         <Grid container spacing={1}>
           <Grid item xs={1}></Grid>
           <Grid item xs={10}>
@@ -189,7 +103,7 @@ const CaseStudies = () => {
           <Grid item xs={1}></Grid>
         </Grid>
 
-        <Grid container spacing={1} sx={{marginBottom:10}}>
+        <Grid container spacing={1} sx={{ marginBottom: 10 }}>
           <Grid item xs={6}>
             <Typography
               variant="h4"
@@ -205,13 +119,18 @@ const CaseStudies = () => {
             <Typography variant="subtitle1" gutterBottom component="div">
               Let us get to know you better.
             </Typography>{" "}
-            <Typography variant="subtitle1" gutterBottom component="div" sx={{marginTop:-1}}>
+            <Typography
+              variant="subtitle1"
+              gutterBottom
+              component="div"
+              sx={{ marginTop: -1 }}
+            >
               Book a free Amazon Seller account audit with our consultants.
             </Typography>{" "}
             <Typography variant="h6" gutterBottom component="div">
               During your audit our consultants will:
             </Typography>
-            <ul style={{lineHeight:1.5}}>
+            <ul style={{ lineHeight: 1.5 }}>
               <li>Discuss ways we can meet your business goals</li>
               <li>Perform an Amazon brand and competitor analysis</li>
               <li>Show how our expertise can help you kickstart your sales</li>
@@ -228,7 +147,7 @@ const CaseStudies = () => {
             <Typography variant="h6" gutterBottom component="div">
               Email *
             </Typography>
-            <OutlinedInput placeholder="Enter email" sx={{width:"100%"}}/>
+            <OutlinedInput placeholder="Enter email" sx={{ width: "100%" }} />
             <Button
               variant="contained"
               sx={{
