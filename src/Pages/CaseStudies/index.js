@@ -36,6 +36,21 @@ const successStories = [
     url: "/casestudy5.png",
     imgText: "Hair Brust",
   },
+  {
+    id: `success-story-6`,
+    url: "/casestudy6.png",
+    imgText: "Hair Brust",
+  },
+  {
+    id: `success-story-7`,
+    url: "/casestudy7.png",
+    imgText: "Hair Brust",
+  },
+  {
+    id: `success-story-8`,
+    url: "/casestudy8.jpg",
+    imgText: "Hair Brust",
+  },
 ];
 
 //component
@@ -78,12 +93,11 @@ const CaseStudies = () => {
       <Grid
         container
         spacing={{ md: 6, sm: 4, xs: 2 }}
-        sx={{ marginTop: 3 }}
         direction="row"
         justifyContent="center"
       >
         {successStories?.map((sucess, index) => (
-          <Grid item xs={4} key={`${index}-success-story-${sucess?.id}`}>
+          <Grid item xs={4} key={`${index}-success-story-${sucess?.id}`} >
             <Box
               sx={{
                 border: 1,
@@ -110,7 +124,7 @@ const CaseStudies = () => {
         ))}
       </Grid>
 
-      <div style={{ width: "100%" }}>
+      <div style={{ width: "100%", marginTop:30}}>
         <Grid container spacing={1}>
           <Grid item xs={1}></Grid>
           <Grid item xs={10}>
