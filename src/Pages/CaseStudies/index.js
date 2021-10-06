@@ -1,5 +1,5 @@
 import React from "react";
-import { TextField,Button,Grid, Typography, Box } from "@mui/material";
+import { TextField, Button, Grid, Typography, Box } from "@mui/material";
 const CaseStudies = () => {
   return (
     <Box sx={{ flexGrow: 1 }}>
@@ -175,68 +175,75 @@ const CaseStudies = () => {
         </Grid>
         <Grid item xs={1}></Grid>
       </Grid>
-      <div style={{width:"100%",backgroundColor:"#FCFCFC"}}>
-      <Grid container spacing={1}>
-        <Grid item xs={1}></Grid>
-        <Grid item xs={10}>
-          <Typography
-            variant="h3"
-            sx={{ fontWeight: 800, textAlign: "center" }}
-          >
-            Want to be another success story?
-          </Typography>
+      <div style={{ width: "100%", backgroundColor: "#FCFCFC" }}>
+        <Grid container spacing={1}>
+          <Grid item xs={1}></Grid>
+          <Grid item xs={10}>
+            <Typography
+              variant="h3"
+              sx={{ fontWeight: 800, textAlign: "center" }}
+            >
+              Want to be another success story?
+            </Typography>
+          </Grid>
+          <Grid item xs={1}></Grid>
         </Grid>
-        <Grid item xs={1}></Grid>
-      </Grid>
 
-      <Grid container spacing={1} sx={{backgroundColor:"#FCFCFC"}}>
-        <Grid item xs={6}>
-        <Typography
-            variant="h4"
-            gutterBottom
-            component="div"
+        <Grid container spacing={1} sx={{ backgroundColor: "#FCFCFC" }}>
+          <Grid item xs={6}>
+            <Typography
+              variant="h4"
+              gutterBottom
+              component="div"
+              sx={{
+                marginTop: 10,
+                fontWeight: 800,
+              }}
+            >
+              Contact Us.
+            </Typography>
+            <Typography variant="subtitle1" gutterBottom component="div">
+              Let us get to know you better.
+            </Typography>{" "}
+            <Typography variant="subtitle1" gutterBottom component="div">
+              Book a free Amazon Seller account audit with our consultants.
+            </Typography>{" "}
+            <Typography variant="h6" gutterBottom component="div">
+              During your audit our consultants will:
+            </Typography>
+            <ul>
+              <li>Discuss ways we can meet your business goals</li>
+              <li>Perform an Amazon brand and competitor analysis</li>
+              <li>Show how our expertise can help you kickstart your sales</li>
+            </ul>
+          </Grid>
+
+          <Grid
+            item
+            xs={3}
             sx={{
               marginTop: 10,
-              fontWeight:800,
             }}
           >
-            Contact Us.
-          </Typography>
-          <Typography variant="subtitle1" gutterBottom component="div">
-          Let us get to know you better.
-
-          </Typography>{" "}
-          <Typography variant="subtitle1" gutterBottom component="div">
-          
-Book a free Amazon Seller account audit with our consultants.
-          </Typography>{" "}
-          <Typography variant="h6" gutterBottom component="div">
-          During your audit our consultants will:
-
-          </Typography>
-          <ul>
-  <li>Discuss ways we can meet your business goals</li>
-  <li>Perform an Amazon brand and competitor analysis</li>
-  <li>Show how our expertise can help you kickstart your sales</li>
-</ul>
+            <Typography variant="h6" gutterBottom component="div">
+              Email *
+            </Typography>
+            <TextField
+              id="outlined-basic"
+              label="Outlined"
+              variant="outlined"
+            />
+            <Button
+              variant="contained"
+              sx={{
+                marginTop: 3,
+              }}
+            >
+              Get in touch
+            </Button>
+          </Grid>
+          <Grid item xs={3}></Grid>
         </Grid>
-        
-        <Grid item xs={3} sx={{
-              marginTop: 10,
-            
-            }}>
-        <Typography variant="h6" gutterBottom component="div">
-          Email *
-
-          </Typography>
-          <TextField id="outlined-basic" label="Outlined" variant="outlined" />
-          <Button variant="contained" sx={{
-              marginTop: 3,
-            
-            }}>Get in touch</Button>
-        </Grid>
-        <Grid item xs={3}></Grid>
-      </Grid>
       </div>
     </Box>
   );
