@@ -21,6 +21,21 @@ const successStories = [
     url: "/casestudy2.jpg",
     imgText: "Hair Brust",
   },
+  {
+    id: `success-story-3`,
+    url: "/casestudy3.jpg",
+    imgText: "Hair Brust",
+  },
+  {
+    id: `success-story-4`,
+    url: "/casestudy4.jpg",
+    imgText: "Hair Brust",
+  },
+  {
+    id: `success-story-5`,
+    url: "/casestudy5.png",
+    imgText: "Hair Brust",
+  },
 ];
 
 //component
@@ -60,7 +75,13 @@ const CaseStudies = () => {
         </Grid>
         <Grid item xs={false} md={4} lg={4}></Grid>
       </Grid>
-      <Grid container spacing={6} sx={{ marginTop: 3 }}>
+      <Grid
+        container
+        spacing={{ md: 6, sm: 4, xs: 2 }}
+        sx={{ marginTop: 3 }}
+        direction="row"
+        justifyContent="center"
+      >
         {successStories?.map((sucess, index) => (
           <Grid item xs={4} key={`${index}-success-story-${sucess?.id}`}>
             <Box
