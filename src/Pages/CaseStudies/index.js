@@ -97,7 +97,7 @@ const CaseStudies = () => {
         justifyContent="center"
       >
         {successStories?.map((sucess, index) => (
-          <Grid item xs={4} key={`${index}-success-story-${sucess?.id}`} >
+          <Grid item xs={4} sx={{marginTop:5}} key={`${index}-success-story-${sucess?.id}`} >
             <Box
               sx={{
                 border: 1,
@@ -106,6 +106,7 @@ const CaseStudies = () => {
                 borderRadius: 2,
                 display: "flex",
                 alignItems: "center",
+                
               }}
             >
               <img
