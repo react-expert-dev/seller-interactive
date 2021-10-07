@@ -92,12 +92,13 @@ const CaseStudies = () => {
       </Grid>
       <Grid
         container
-        spacing={{ md: 6, sm: 4, xs: 2 }}
+        spacing={7}
         direction="row"
         justifyContent="center"
+        sx={{marginTop:1}}
       >
         {successStories?.map((sucess, index) => (
-          <Grid item xs={4} sx={{marginTop:5}} key={`${index}-success-story-${sucess?.id}`} >
+          <Grid item xs={4}  key={`${index}-success-story-${sucess?.id}`} >
             <Box
               sx={{
                 border: 1,
