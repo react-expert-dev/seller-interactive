@@ -1,12 +1,12 @@
-import { Fragment } from "react";
+import { Fragment } from 'react'
 
 //package import
 
-import { Route } from "react-router-dom";
+import { Route } from 'react-router-dom'
 
 //user import
 
-import { routes } from "./root_routes";
+import { routes } from './root_routes'
 
 export const Routes = () => {
   return (
@@ -20,5 +20,5 @@ export const Routes = () => {
         />
       ))}
     </Fragment>
-  );
-};
+  )
+}
