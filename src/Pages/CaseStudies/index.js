@@ -7,7 +7,7 @@ import {
   Box,
   useTheme,
 } from "@mui/material";
-import './style.css'
+import "./style.css";
 
 //constants
 
@@ -96,10 +96,10 @@ const CaseStudies = () => {
         spacing={7}
         direction="row"
         justifyContent="center"
-        sx={{marginTop:1}}
+        sx={{ marginTop: 1 }}
       >
         {successStories?.map((sucess, index) => (
-          <Grid item xs={4}  key={`${index}-success-story-${sucess?.id}`} >
+          <Grid item xs={4} key={`${index}-success-story-${sucess?.id}`}>
             <Box
               sx={{
                 border: 1,
@@ -108,38 +108,34 @@ const CaseStudies = () => {
                 borderRadius: 2,
                 display: "flex",
                 alignItems: "center",
-                
               }}
             >
-             
               <div className="flip-card">
-  <div className="flip-card-inner">
-    <div className="flip-card-front">
-    <img
-                style={{
-                  padding: 10,
-                  width: "70%",
-                  height:250,
-                  marginTop:10
-               
-                }}
-                src={sucess?.url}
-                alt={sucess?.imgText}
-              />
-    </div>
-    <div className="flip-card-back">
-      <h1>John Doe</h1> 
-      <p>Architect & Engineer</p> 
-      <p>We love that guy</p>
-    </div>
-  </div>
-</div>
+                <div className="flip-card-inner">
+                  <div className="flip-card-front">
+                    <img
+                      style={{
+                        padding: 10,
+                        width: "70%",
+                        height: 250,
+                        marginTop: 10,
+                      }}
+                      src={sucess?.url}
+                      alt={sucess?.imgText}
+                    />
+                  </div>
+                  <div className="flip-card-back">
+                    <h1>Cator Cable</h1>
+                    <p>We love that guy</p>
+                  </div>
+                </div>
+              </div>
             </Box>
           </Grid>
         ))}
       </Grid>
 
-      <div style={{ width: "100%", marginTop:30}}>
+      <div style={{ width: "100%", marginTop: 30 }}>
         <Grid container spacing={1}>
           <Grid item xs={1}></Grid>
           <Grid item xs={10}>
@@ -210,11 +206,8 @@ const CaseStudies = () => {
           <Grid item xs={3}></Grid>
         </Grid>
       </div>
-      <Box>
-
-      </Box>
+      <Box></Box>
     </Box>
-    
   );
 };
 
