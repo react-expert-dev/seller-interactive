@@ -99,7 +99,7 @@ const CaseStudies = () => {
         sx={{ marginTop: 1 }}
       >
         {successStories?.map((sucess, index) => (
-          <Grid item xs={4} key={`${index}-success-story-${sucess?.id}`}>
+          <Grid item xs={12} md={4} sm={12} lg={4}  key={`${index}-success-story-${sucess?.id}`}>
             <Box
               sx={{
                 border: 1,
@@ -125,8 +125,8 @@ const CaseStudies = () => {
                     />
                   </div>
                   <div className="flip-card-back">
-                    <h1>Cator Cable</h1>
-                    <p>We love that guy</p>
+                    <Typography variant="h3">Cator Cable</Typography> 
+                    <Typography variant="h6">We love that guy!</Typography> 
                   </div>
                 </div>
               </div>
@@ -138,7 +138,7 @@ const CaseStudies = () => {
       <div style={{ width: "100%", marginTop: 30 }}>
         <Grid container spacing={1}>
           <Grid item xs={1}></Grid>
-          <Grid item xs={10}>
+          <Grid item xs={12} sm={12} md={10} lg={10} >
             <Typography
               variant="h3"
               sx={{ fontWeight: 800, textAlign: "center" }}
@@ -150,7 +150,7 @@ const CaseStudies = () => {
         </Grid>
 
         <Grid container spacing={1} sx={{ marginBottom: 10 }}>
-          <Grid item xs={6}>
+          <Grid item xs={12} sm={12} md={6} lg={6}>
             <Typography
               variant="h4"
               gutterBottom
@@ -185,7 +185,7 @@ const CaseStudies = () => {
 
           <Grid
             item
-            xs={3}
+            xs={12} sm={12} md={6} lg={3}
             sx={{
               marginTop: 5,
             }}
