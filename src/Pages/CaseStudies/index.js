@@ -16,41 +16,49 @@ const successStories = [
     id: `success-story-1`,
     url: "/casestudy1.png",
     imgText: "Addian Management",
+    cardtext:"Gator Cable"
   },
   {
     id: `success-story-2`,
     url: "/casestudy2.jpg",
     imgText: "Hair Brust",
+    cardtext:"Hair Burst"
   },
   {
     id: `success-story-3`,
     url: "/casestudy3.jpg",
     imgText: "Hair Brust",
+    cardtext:"Quench Co"
   },
   {
     id: `success-story-4`,
     url: "/casestudy4.jpg",
     imgText: "Hair Brust",
+    cardtext:"Solo Nutrition"
   },
   {
     id: `success-story-5`,
     url: "/casestudy5.png",
     imgText: "Hair Brust",
+    cardtext:"Woken Coffee"
   },
   {
     id: `success-story-6`,
     url: "/casestudy6.png",
     imgText: "Hair Brust",
+    cardtext:"Tribella"
   },
   {
     id: `success-story-7`,
     url: "/casestudy7.png",
     imgText: "Hair Brust",
+    cardtext:"Guardian Athletic"
   },
   {
     id: `success-story-8`,
     url: "/casestudy8.jpg",
     imgText: "Hair Brust",
+    cardtext:"Vortex Enterprise"
   },
 ];
 
@@ -125,8 +133,7 @@ const CaseStudies = () => {
                     />
                   </div>
                   <div className="flip-card-back">
-                    <Typography variant="h3">Cator Cable</Typography> 
-                    <Typography variant="h6">We love that guy!</Typography> 
+                    <Typography variant="h3" sx={{fontWeight:800, marginTop:13}}>{sucess?.cardtext}</Typography>  
                   </div>
                 </div>
               </div>
