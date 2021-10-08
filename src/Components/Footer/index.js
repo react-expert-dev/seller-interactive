@@ -9,6 +9,10 @@ import {
   YouTube as YouTubeIcon,
 } from "@mui/icons-material";
 
+//user import
+
+import Logo from "../../SVG/logo";
+
 //constants
 
 const amazonArr = [
@@ -127,6 +131,7 @@ const Footer = () => {
         <Grid item xs={12} sm={6} md={3}>
           <Box margin={2}>
             <Box>Madian Management</Box>
+            <Box>{/* <Logo /> */}</Box>
             <Box paddingY={2}>
               <Typography variant={"body1"} fontWeight={"bold"}>
                 Get ahead on Amazon

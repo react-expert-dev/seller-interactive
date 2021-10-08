@@ -17,6 +17,7 @@ import { Phone as PhoneIcon } from "@mui/icons-material";
 //user import
 
 import { HideOnScroll } from "./HideOnScroll";
+import { Root_Routes } from "../../Services/Routes/APP";
 
 //constants
 
@@ -24,6 +25,7 @@ const amazonArr = [
   {
     id: 31,
     title: "Full Account Management",
+    href: "",
     icon: "",
   },
   {
@@ -73,6 +75,19 @@ const amazonArr = [
   },
 ];
 
+const ourClients = [
+  {
+    id: `client-1`,
+    href: Root_Routes?.case_studies,
+    title: "Case Studies",
+  },
+  {
+    id: `client-2`,
+    href: Root_Routes?.testimonials,
+    title: "Client Testimonials",
+  },
+];
+
 //component
 
 export default function HideAppBar(props) {
@@ -108,13 +123,40 @@ export default function HideAppBar(props) {
                       What We Do
                     </Button>
 
-                    <Box className="dropdown-content">
+                    <Box
+                      className="dropdown-content"
+                      sx={{
+                        backgroundColor: theme.palette.background.default,
+                        padding: 2,
+                      }}
+                    >
                       <Box>
-                        <Typography>AMAZON SERVICES</Typography>
+                        <Typography
+                          color={theme.palette.primary.main}
+                          fontWeight={"bold"}
+                        >
+                          AMAZON SERVICES
+                        </Typography>
                       </Box>
                       {amazonArr?.map((ama, index) => (
-                        <Box key={`${index}-amazon-services-${ama?.id}`}>
-                          <Link href={"#"} underline={"none"}>
+                        <Box
+                          key={`${index}-amazon-services-${ama?.id}`}
+                          sx={{
+                            padding: 1,
+                            color: theme.palette.common.black,
+                            ":hover": {
+                              backgroundColor: theme.palette.primary.main,
+                              color: theme.palette.common.white,
+                              borderRadius: 1,
+                            },
+                          }}
+                        >
+                          <Link
+                            href={"#"}
+                            underline={"none"}
+                            color={"inherit"}
+                            noWrap
+                          >
                             {ama?.title}
                           </Link>
                         </Box>
@@ -125,30 +167,88 @@ export default function HideAppBar(props) {
                     <Button padding={1} color={"inherit"}>
                       Who We Are
                     </Button>
-                    <Box className="dropdown-content">
+                    <Box
+                      className="dropdown-content"
+                      sx={{
+                        backgroundColor: theme.palette.background.default,
+                        padding: 2,
+                      }}
+                    >
                       <Box>
-                        <Typography>AMAZON SERVICES</Typography>
+                        <Typography
+                          color={theme.palette.primary.main}
+                          fontWeight={"bold"}
+                        >
+                          AMAZON SERVICES
+                        </Typography>
                       </Box>
                       {amazonArr?.map((ama, index) => (
-                        <Box key={`${index}-amazon-services-${ama?.id}`}>
-                          <Link href={"#"} underline={"none"}>
+                        <Box
+                          key={`${index}-amazon-services-${ama?.id}`}
+                          sx={{
+                            padding: 1,
+                            color: theme.palette.common.black,
+                            ":hover": {
+                              backgroundColor: theme.palette.primary.main,
+                              color: theme.palette.common.white,
+                              borderRadius: 1,
+                            },
+                          }}
+                        >
+                          <Link
+                            href={"#"}
+                            underline={"none"}
+                            color={"inherit"}
+                            noWrap
+                          >
                             {ama?.title}
                           </Link>
                         </Box>
                       ))}
                     </Box>
                   </Box>
+                  {/* Our clients */}
                   <Box className={"dropdown"}>
                     <Button padding={1} color={"inherit"}>
                       Our Clients
                     </Button>
-                    <Box className="dropdown-content">
+                    <Box
+                      className="dropdown-content"
+                      sx={{
+                        backgroundColor: theme.palette.background.default,
+                        padding: 2,
+                      }}
+                    >
                       <Box>
-                        <Typography>AMAZON SERVICES</Typography>
+                        <Typography
+                          color={theme.palette.primary.main}
+                          fontWeight={"bold"}
+                          sx={{
+                            textTransform: "uppercase",
+                          }}
+                        >
+                          Our Clients
+                        </Typography>
                       </Box>
-                      {amazonArr?.map((ama, index) => (
-                        <Box key={`${index}-amazon-services-${ama?.id}`}>
-                          <Link href={"#"} underline={"none"}>
+                      {ourClients?.map((ama, index) => (
+                        <Box
+                          key={`${index}-amazon-services-${ama?.id}`}
+                          sx={{
+                            padding: 1,
+                            color: theme.palette.common.black,
+                            ":hover": {
+                              backgroundColor: theme.palette.primary.main,
+                              color: theme.palette.common.white,
+                              borderRadius: 1,
+                            },
+                          }}
+                        >
+                          <Link
+                            href={ama?.href}
+                            underline={"none"}
+                            color={"inherit"}
+                            noWrap
+                          >
                             {ama?.title}
                           </Link>
                         </Box>
@@ -156,7 +256,11 @@ export default function HideAppBar(props) {
                     </Box>
                   </Box>
                   <Box padding={1}>
-                    <Link color={"inherit"} href={"/"} underline={"none"}>
+                    <Link
+                      color={"inherit"}
+                      href={Root_Routes?.blog}
+                      underline={"none"}
+                    >
                       Blog
                     </Link>
                   </Box>
