@@ -82,8 +82,7 @@ const CaseStudies = () => {
             sx={{
               marginTop: 10,
               fontWeight: 800,
-            }}
-          >
+            }} >
             Case Studies.
           </Typography>
           <Typography variant="subtitle1" gutterBottom component="div">
@@ -104,8 +103,7 @@ const CaseStudies = () => {
         spacing={7}
         direction="row"
         justifyContent="center"
-        sx={{ marginTop: 1 }}
-      >
+        sx={{ marginTop: 1 }}>
         {successStories?.map((sucess, index) => (
           <Grid item xs={12} md={4} sm={12} lg={4}  key={`${index}-success-story-${sucess?.id}`}>
             <Box
@@ -116,8 +114,7 @@ const CaseStudies = () => {
                 borderRadius: 2,
                 display: "flex",
                 alignItems: "center",
-              }}
-            >
+              }} >
               <div className="flip-card">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
@@ -165,8 +162,7 @@ const CaseStudies = () => {
               sx={{
                 marginTop: 5,
                 fontWeight: 800,
-              }}
-            >
+              }} >
               Contact Us.
             </Typography>
             <Typography variant="subtitle1" gutterBottom component="div">
@@ -176,8 +172,7 @@ const CaseStudies = () => {
               variant="subtitle1"
               gutterBottom
               component="div"
-              sx={{ marginTop: -1 }}
-            >
+              sx={{ marginTop: -1 }} >
               Book a free Amazon Seller account audit with our consultants.
             </Typography>{" "}
             <Typography variant="h6" gutterBottom component="div">
@@ -195,8 +190,7 @@ const CaseStudies = () => {
             xs={12} sm={12} md={6} lg={3}
             sx={{
               marginTop: 5,
-            }}
-          >
+            }} >
             <Typography variant="h6" gutterBottom component="div">
               Email *
             </Typography>
@@ -205,8 +199,7 @@ const CaseStudies = () => {
               variant="contained"
               sx={{
                 marginTop: 3,
-              }}
-            >
+              }} >
               Get in touch
             </Button>
           </Grid>
