@@ -88,6 +88,24 @@ const ourClients = [
   },
 ];
 
+const whoAreWe = [
+  {
+    id: `client-1`,
+    href: Root_Routes?.seller_interactive,
+    title: "Why Seller Interactive?",
+  },
+  {
+    id: `client-2`,
+    href: Root_Routes?.ourstory,
+    title: "Our Story",
+  },
+  {
+    id: `client-2`,
+    href: Root_Routes?.our_team,
+    title: "Our Team",
+  },
+];
+
 //component
 
 export default function HideAppBar(props) {
@@ -179,10 +197,10 @@ export default function HideAppBar(props) {
                           color={theme.palette.primary.main}
                           fontWeight={"bold"}
                         >
-                          AMAZON SERVICES
+                          WHO ARE WE
                         </Typography>
                       </Box>
-                      {amazonArr?.map((ama, index) => (
+                      {whoAreWe?.map((ama, index) => (
                         <Box
                           key={`${index}-amazon-services-${ama?.id}`}
                           sx={{
@@ -196,7 +214,7 @@ export default function HideAppBar(props) {
                           }}
                         >
                           <Link
-                            href={"#"}
+                            href={ama?.href}
                             underline={"none"}
                             color={"inherit"}
                             noWrap

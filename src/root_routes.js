@@ -1,6 +1,14 @@
 //user import
 
-import { Home, Blog, OurStory, CaseStudies, Testimonials } from "./Pages";
+import {
+  Home,
+  Blog,
+  OurStory,
+  CaseStudies,
+  Testimonials,
+  OurTeam,
+  SellerInteractive,
+} from "./Pages";
 import { Root_Routes } from "./Services/Routes/APP";
 
 export const routes = [
@@ -32,6 +40,19 @@ export const routes = [
     id: 105,
     path: Root_Routes?.case_studies,
     page: CaseStudies,
+    exact: true,
+  },
+
+  {
+    id: 106,
+    path: Root_Routes?.seller_interactive,
+    page: SellerInteractive,
+    exact: true,
+  },
+  {
+    id: 107,
+    path: Root_Routes?.our_team,
+    page: OurTeam,
     exact: true,
   },
 ];
