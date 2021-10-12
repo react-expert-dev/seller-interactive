@@ -16,49 +16,49 @@ const successStories = [
     id: `success-story-1`,
     url: "/casestudy1.png",
     imgText: "Addian Management",
-    cardtext:"Gator Cable"
+    cardtext: "Gator Cable",
   },
   {
     id: `success-story-2`,
     url: "/casestudy2.jpg",
     imgText: "Hair Brust",
-    cardtext:"Hair Burst"
+    cardtext: "Hair Burst",
   },
   {
     id: `success-story-3`,
     url: "/casestudy3.jpg",
     imgText: "Hair Brust",
-    cardtext:"Quench Co"
+    cardtext: "Quench Co",
   },
   {
     id: `success-story-4`,
     url: "/casestudy4.jpg",
     imgText: "Hair Brust",
-    cardtext:"Solo Nutrition"
+    cardtext: "Solo Nutrition",
   },
   {
     id: `success-story-5`,
     url: "/casestudy5.png",
     imgText: "Hair Brust",
-    cardtext:"Woken Coffee"
+    cardtext: "Woken Coffee",
   },
   {
     id: `success-story-6`,
     url: "/casestudy6.png",
     imgText: "Hair Brust",
-    cardtext:"Tribella"
+    cardtext: "Tribella",
   },
   {
     id: `success-story-7`,
     url: "/casestudy7.png",
     imgText: "Hair Brust",
-    cardtext:"Guardian Athletic"
+    cardtext: "Guardian Athletic",
   },
   {
     id: `success-story-8`,
     url: "/casestudy8.jpg",
     imgText: "Hair Brust",
-    cardtext:"Vortex Enterprise"
+    cardtext: "Vortex Enterprise",
   },
 ];
 
@@ -82,7 +82,8 @@ const CaseStudies = () => {
             sx={{
               marginTop: 10,
               fontWeight: 800,
-            }} >
+            }}
+          >
             Case Studies.
           </Typography>
           <Typography variant="subtitle1" gutterBottom component="div">
@@ -103,34 +104,53 @@ const CaseStudies = () => {
         spacing={7}
         direction="row"
         justifyContent="center"
-        sx={{ marginTop: 1 }}>
+        sx={{ marginTop: 1 }}
+      >
         {successStories?.map((sucess, index) => (
-          <Grid item xs={12} md={4} sm={12} lg={4}  key={`${index}-success-story-${sucess?.id}`}>
+          <Grid
+            item
+            xs={12}
+            md={4}
+            sm={12}
+            lg={4}
+            key={`${index}-success-story-${sucess?.id}`}
+          >
             <Box
               sx={{
                 border: 1,
-                width: "100%",
-                height: "100%",
+
                 borderRadius: 2,
-                display: "flex",
-                alignItems: "center",
-              }} >
+              }}
+            >
               <div className="flip-card">
                 <div className="flip-card-inner">
                   <div className="flip-card-front">
-                    <img
-                      style={{
-                        padding: 10,
-                        width: "70%",
-                        height: 250,
-                        marginTop: 10,
+                    <Box
+                      sx={{
+                        padding: 2,
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "center",
+                        width: "90%",
+                        height: "90%",
                       }}
-                      src={sucess?.url}
-                      alt={sucess?.imgText}
-                    />
+                    >
+                      <Box width={200}>
+                        <img
+                          width={"100%"}
+                          src={sucess?.url}
+                          alt={sucess?.imgText}
+                        />
+                      </Box>
+                    </Box>
                   </div>
                   <div className="flip-card-back">
-                    <Typography variant="h3" sx={{fontWeight:800, marginTop:13}}>{sucess?.cardtext}</Typography>  
+                    <Typography
+                      variant="h3"
+                      sx={{ fontWeight: 800, marginTop: 13 }}
+                    >
+                      {sucess?.cardtext}
+                    </Typography>
                   </div>
                 </div>
               </div>
@@ -142,7 +162,7 @@ const CaseStudies = () => {
       <div style={{ width: "100%", marginTop: 30 }}>
         <Grid container spacing={1}>
           <Grid item xs={1}></Grid>
-          <Grid item xs={12} sm={12} md={10} lg={10} >
+          <Grid item xs={12} sm={12} md={10} lg={10}>
             <Typography
               variant="h3"
               sx={{ fontWeight: 800, textAlign: "center" }}
@@ -162,7 +182,8 @@ const CaseStudies = () => {
               sx={{
                 marginTop: 5,
                 fontWeight: 800,
-              }} >
+              }}
+            >
               Contact Us.
             </Typography>
             <Typography variant="subtitle1" gutterBottom component="div">
@@ -172,7 +193,8 @@ const CaseStudies = () => {
               variant="subtitle1"
               gutterBottom
               component="div"
-              sx={{ marginTop: -1 }} >
+              sx={{ marginTop: -1 }}
+            >
               Book a free Amazon Seller account audit with our consultants.
             </Typography>{" "}
             <Typography variant="h6" gutterBottom component="div">
@@ -187,10 +209,14 @@ const CaseStudies = () => {
 
           <Grid
             item
-            xs={12} sm={12} md={6} lg={3}
+            xs={12}
+            sm={12}
+            md={6}
+            lg={3}
             sx={{
               marginTop: 5,
-            }} >
+            }}
+          >
             <Typography variant="h6" gutterBottom component="div">
               Email *
             </Typography>
@@ -199,7 +225,8 @@ const CaseStudies = () => {
               variant="contained"
               sx={{
                 marginTop: 3,
-              }} >
+              }}
+            >
               Get in touch
             </Button>
           </Grid>
