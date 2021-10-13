@@ -51,7 +51,7 @@ const ourTeamMembers = [
   },
   {
     id: `success-story-4`,
-    url: "/teammember9.png",
+    url: "/teammember4.jpeg",
     imgText: "Hair Brust",
     cardtext: "Solo Nutrition",
   },
@@ -63,13 +63,13 @@ const ourTeamMembers = [
   },
   {
     id: `success-story-4`,
-    url: "/teammember11.jpeg",
+    url: "/teammember13.jpeg",
     imgText: "Hair Brust",
     cardtext: "Solo Nutrition",
   },
   {
     id: `success-story-4`,
-    url: "/teammember12.jpeg",
+    url: "/teammember15.png",
     imgText: "Hair Brust",
     cardtext: "Solo Nutrition",
   },
@@ -155,16 +155,7 @@ const OurTeam = () => {
       >
         The people behind the magic.
       </Typography>
-      <Grid container spacing={2}>
-        <Grid item xs={12} sm={12} md={3} lg={3}>
-          <img
-            style={{ borderRadius: "50%" }}
-            src={"/ourteam1.jpg"}
-            width={"100%"}
-            alt={"Addian Management"}
-          />
-        </Grid>
-      </Grid>
+     
       <Grid
         container
         spacing={7}
@@ -181,9 +172,9 @@ const OurTeam = () => {
             lg={3}
             key={`${index}-success-story-${sucess?.id}`}
           >
-            <img width={"100%"} src={sucess?.url} alt={sucess?.imgText} />
-            <Typography variant="h5">Nicasio Co III</Typography>
-            <Typography variant="title1">Founder</Typography>
+            <img width={"100%"} src={sucess?.url} alt={sucess?.imgText} style={{ borderRadius: "50%" }} />
+            <Typography variant="h6"sx={{textAlign:"center",fontWeight:600, marginTop:2}} >Nicasio Co III</Typography>
+            <Typography variant="subtitle1"sx={{textAlign:"center"}} >Founder</Typography>
           </Grid>
         ))}
       </Grid>
