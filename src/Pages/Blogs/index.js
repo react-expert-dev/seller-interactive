@@ -4,12 +4,16 @@ import Grid from '@mui/material/Grid'
 import { Link } from 'react-router-dom'
 
 import {
+  Container,
+  Box,
   Card,
   Typography,
   CardContent,
   CardHeader,
   CardMedia,
+  Button,
 } from '@mui/material'
+import { fontSize } from '@mui/system'
 //Images
 const pic1 = '/images/amazon-digital-marketing-agency.jpg'
 const pic2 = '/images/amazon-fba-consultant-scaled.jpeg'
@@ -24,6 +28,7 @@ const pic10 = '/images/amazon-advertising-agencies.jpg'
 const pic11 = '/images/full-service-digital-marketing-agency.jpg'
 const pic12 = '/images/amazon-review-manipulation-appeal.jpg'
 
+const footerImg = ' /images/Mask-Group-1.png'
 const today = new Date()
 const blogData = [
   {
@@ -139,14 +144,14 @@ const Blog = () => {
   return (
     <div>
       <h1>Blog page</h1>
-      <Card>
+      <Card sx={{ margin: 4, borderRadius: 4 }}>
         <Grid container direction='row'>
           <Grid item sm={4} md={4} lg={4} xl={4}>
             <CardHeader
               subheader={blogData[0].blogDate && blogData[0].blogDate}
             />
             <CardContent>
-              <Link to='#!'>
+              <Link to='#' underline='none'>
                 <Typography gutterBottom variant='h5' component='div'>
                   {blogData[0].blogTitle && blogData[0].blogTitle}
                 </Typography>
@@ -182,6 +187,37 @@ const Blog = () => {
           )
         })}
       </Grid>
+      <Container maxWidth='md'>
+        <Box
+          sx={{
+            borderRadius: 4,
+            bgcolor: '#fb3767',
+            height: '50vh',
+            backgroundImage: `url(${footerImg})`,
+
+            marginTop: '4px',
+          }}
+        >
+          <Container
+            style={{
+              width: '65%',
+              padding: '50px',
+              textAlign: 'center',
+              color: 'white',
+            }}
+          >
+            <h1 style={{ marginBottom: '8px' }}>
+              Go from surviving to thriving on Amazon.
+            </h1>
+            <p style={{ marginBottom: '20px' }}>
+              Use the power and influence of advertising to increase sales.
+              Learn more about how you can benefit from our management
+              expertise.
+            </p>
+            <Button>Talk Us</Button>
+          </Container>
+        </Box>
+      </Container>
     </div>
   )
 }

@@ -1,7 +1,14 @@
 //user import
 
-import { Home, Blog, OurStory, CaseStudies, Testimonials } from "./Pages";
-import { Root_Routes } from "./Services/Routes/APP";
+import {
+  Home,
+  Blog,
+  OurStory,
+  CaseStudies,
+  Testimonials,
+  AmazonAccountMangement,
+} from './Pages'
+import { Root_Routes } from './Services/Routes/APP'
 
 export const routes = [
   {
@@ -34,4 +41,4 @@ export const routes = [
     page: CaseStudies,
     exact: true,
   },
-];
+]
