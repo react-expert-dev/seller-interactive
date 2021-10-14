@@ -1,5 +1,5 @@
 import React, { memo } from "react";
-
+import OurPartners from "../../Components/OurPartners";
 //package import
 
 import { Button, Grid, Typography, Box } from "@mui/material";
@@ -180,7 +180,6 @@ const OurStory = () => {
             sx={{
               marginTop: 3,
               fontWeight: 400,
-              marginBottom: 12,
             }}
           >
             We continue to sell our own products..If you enjoy sushi, it makes
@@ -194,62 +193,8 @@ const OurStory = () => {
         </Grid>
         <Grid xs={2}></Grid>
       </Grid>
-      <Grid container spacing={2}>
-        <Grid item xs={4}></Grid>
-        <Grid item xs={12} sm={12} md={4}>
-          <Typography
-            variant="subtitle1"
-            gutterBottom
-            component="div"
-            sx={{
-              fontWeight: 400,
-              textAlign: "center",
-            }}
-          >
-            Our Partners
-          </Typography>{" "}
-        </Grid>
-        <Grid item xs={4}></Grid>
-      </Grid>
-      <Grid container spacing={1}>
-        <Grid item xs={1}></Grid>
-        <Grid item xs={2}>
-          <img
-            src={"/ourstory3.png"}
-            width={"100%"}
-            alt={"Addian Management"}
-          />
-        </Grid>
-        <Grid item xs={2} sx={{ marginTop: 5 }}>
-          <img
-            src={"/ourstory4.png"}
-            width={"100%"}
-            alt={"Addian Management"}
-          />
-        </Grid>
-        <Grid item xs={2} sx={{ marginTop: 4 }}>
-          <img
-            src={"/ourstory5.png"}
-            width={"100%"}
-            alt={"Addian Management"}
-          />
-        </Grid>
-        <Grid item xs={2}>
-          <img
-            src={"/ourstory6.png"}
-            width={"100%"}
-            alt={"Addian Management"}
-          />
-        </Grid>
-        <Grid item xs={2} sx={{ marginTop: 1 }}>
-          <img
-            src={"/ourstory7.png"}
-            width={"100%"}
-            alt={"Addian Management"}
-          />
-        </Grid>
-        <Grid item xs={1}></Grid>
-      </Grid>
+   
+      <OurPartners />
     </Box>
   );
 };
