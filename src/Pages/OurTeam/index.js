@@ -1,131 +1,133 @@
 import React from "react";
 import { Button, Box, Grid, Typography } from "@mui/material";
+import OurPartners from "../../Components/OurPartners";
+import ThrivingAmazon from "../../Components/ThrivingAmazon";
 const ourTeamMembers = [
   {
     id: `success-story-1`,
     url: "/teammember1.png",
     imgText: "Addian Management",
     memberName: "Nicasio Co III",
-    memberDesignation:"Founder",
+    memberDesignation: "Founder",
   },
   {
     id: `success-story-2`,
     url: "/teammember2.png",
     imgText: "Hair Brust",
     memberName: "Jayce Broda",
-    memberDesignation:"Managing Director",
+    memberDesignation: "Managing Director",
   },
   {
     id: `success-story-3`,
     url: "/teammember3.png",
     imgText: "Hair Brust",
     memberName: "Ken Zhou",
-    memberDesignation:"Director of Operations",
+    memberDesignation: "Director of Operations",
   },
   {
     id: `success-story-4`,
     url: "/teammember4.jpeg",
     imgText: "Hair Brust",
     memberName: "Felicia Liu",
-    memberDesignation:"Head of Talent",
+    memberDesignation: "Head of Talent",
   },
   {
     id: `success-story-4`,
     url: "/teammember5.png",
     imgText: "Hair Brust",
     memberName: "Stefani Chhor",
-    memberDesignation:"Director of Culture",
+    memberDesignation: "Director of Culture",
   },
   {
     id: `success-story-4`,
     url: "/teammember6.png",
     imgText: "Hair Brust",
     memberName: "Michael Pignatelli",
-    memberDesignation:"Finance and Special Projects Analyst",
+    memberDesignation: "Finance and Special Projects Analyst",
   },
   {
     id: `success-story-4`,
     url: "/teammember7.jpeg",
     imgText: "Hair Brust",
     memberName: "Kevin Wong",
-    memberDesignation:"Client Strategist",
+    memberDesignation: "Client Strategist",
   },
   {
     id: `success-story-4`,
     url: "/teammember8.png",
     imgText: "Hair Brust",
     memberName: "Thomas Davison",
-    memberDesignation:"Lead Developer",
+    memberDesignation: "Lead Developer",
   },
   {
     id: `success-story-4`,
     url: "/teammember4.jpeg",
     imgText: "Hair Brust",
     memberName: "Felicia Liu",
-    memberDesignation:"Head of Talent",
+    memberDesignation: "Head of Talent",
   },
   {
     id: `success-story-4`,
     url: "/teammember10.png",
     imgText: "Hair Brust",
     memberName: "Pramod Bhat",
-    memberDesignation:"FoLogistics Coordinator",
+    memberDesignation: "FoLogistics Coordinator",
   },
   {
     id: `success-story-4`,
     url: "/teammember13.jpeg",
     imgText: "Hair Brust",
     memberName: "Antonette Ho",
-    memberDesignation:"Operations Manager",
+    memberDesignation: "Operations Manager",
   },
   {
     id: `success-story-4`,
     url: "/teammember15.png",
     imgText: "Hair Brust",
     memberName: "Mohamed Aden",
-    memberDesignation:"General Operations Manager",
+    memberDesignation: "General Operations Manager",
   },
   {
     id: `success-story-4`,
     url: "/teammember13.jpeg",
     imgText: "Hair Brust",
     memberName: "Antonette Ho",
-    memberDesignation:"Operations Manager",
+    memberDesignation: "Operations Manager",
   },
   {
     id: `success-story-4`,
     url: "/teammember14.png",
     imgText: "Hair Brust",
     memberName: "Celine Yang",
-    memberDesignation:"Product Development and Sourcing Specialis",
+    memberDesignation: "Product Development and Sourcing Specialis",
   },
   {
     id: `success-story-4`,
     url: "/teammember15.png",
     imgText: "Hair Brust",
     memberName: "Tuan Nguyen",
-    memberDesignation:"Paid Ads Specialis",
+    memberDesignation: "Paid Ads Specialis",
   },
   {
     id: `success-story-4`,
     url: "/teammember16.png",
     imgText: "Hair Brust",
     memberName: "Marco Chung",
-    memberDesignation:"Operations Team Lead",
+    memberDesignation: "Operations Team Lead",
   },
   {
     id: `success-story-4`,
     url: "/teammember10.png",
     imgText: "Hair Brust",
     memberName: "Pramod Bhat",
-    memberDesignation:"FoLogistics Coordinator",
+    memberDesignation: "FoLogistics Coordinator",
   },
   {
     id: `success-story-4`,
     url: "/teammember16.png",
     imgText: "Hair Brust",
     memberName: "Marco Chung",
-    memberDesignation:"Operations Team Lead",
+    memberDesignation: "Operations Team Lead",
   },
 ];
 
@@ -173,7 +175,7 @@ const OurTeam = () => {
       >
         The people behind the magic.
       </Typography>
-     
+
       <Grid
         container
         spacing={7}
@@ -190,68 +192,26 @@ const OurTeam = () => {
             lg={3}
             key={`${index}-success-story-${sucess?.id}`}
           >
-            <img width={"100%"} src={sucess?.url} alt={sucess?.imgText} style={{ borderRadius: "50%" }} />
-            <Typography variant="h6"sx={{textAlign:"center",fontWeight:600, marginTop:2}} >{sucess?.memberName}</Typography>
-            <Typography variant="subtitle1"sx={{textAlign:"center"}} >{sucess?.memberDesignation}</Typography>
+            <img
+              width={"100%"}
+              src={sucess?.url}
+              alt={sucess?.imgText}
+              style={{ borderRadius: "50%" }}
+            />
+            <Typography
+              variant="h6"
+              sx={{ textAlign: "center", fontWeight: 600, marginTop: 2 }}
+            >
+              {sucess?.memberName}
+            </Typography>
+            <Typography variant="subtitle1" sx={{ textAlign: "center" }}>
+              {sucess?.memberDesignation}
+            </Typography>
           </Grid>
         ))}
       </Grid>
-      <Grid container spacing={2} sx={{marginTop:5}}>
-        <Grid item xs={4}></Grid>
-        <Grid item xs={12} sm={12} md={4}>
-          <Typography
-            variant="subtitle1"
-            gutterBottom
-            component="div"
-            sx={{
-              fontWeight: 400,
-              textAlign: "center",
-            }}
-          >
-            Our Partners
-          </Typography>{" "}
-        </Grid>
-        <Grid item xs={4}></Grid>
-      </Grid>
-      <Grid container spacing={1}>
-        <Grid item xs={1}></Grid>
-        <Grid item xs={2}>
-          <img
-            src={"/ourstory3.png"}
-            width={"100%"}
-            alt={"Addian Management"}
-          />
-        </Grid>
-        <Grid item xs={2} sx={{ marginTop: 5 }}>
-          <img
-            src={"/ourstory4.png"}
-            width={"100%"}
-            alt={"Addian Management"}
-          />
-        </Grid>
-        <Grid item xs={2} sx={{ marginTop: 4 }}>
-          <img
-            src={"/ourstory5.png"}
-            width={"100%"}
-            alt={"Addian Management"}
-          />
-        </Grid>
-        <Grid item xs={2}>
-          <img
-            src={"/ourstory6.png"}
-            width={"100%"}
-            alt={"Addian Management"}
-          />
-        </Grid>
-        <Grid item xs={2} sx={{ marginTop: 1 }}>
-          <img
-            src={"/ourstory7.png"}
-            width={"100%"}
-            alt={"Addian Management"}
-          />
-        </Grid>
-        <Grid item xs={1}></Grid>
-      </Grid>
+      <OurPartners />
+      <ThrivingAmazon />
     </Box>
   );
 };
