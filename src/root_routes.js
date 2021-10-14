@@ -8,6 +8,7 @@ import {
   Testimonials,
   OurTeam,
   SellerInteractive,
+  AmazonAccountMangement,
 } from "./Pages";
 import { Root_Routes } from "./Services/Routes/APP";
 

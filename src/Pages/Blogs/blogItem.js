@@ -22,13 +22,13 @@ const BlogItem = ({ data }) => {
             alt='Image'
             sx={{ borderRadius: 4 }}
           />
-          <CardHeader subheader={data.blogDate && data.blogDate} />
+          <CardHeader> {data.blogTitle && data.blogTitle}</CardHeader>
+          <Typography gutterBottom variant='h5' component='div'>
+            {/* {data.blogTitle && data.blogTitle} */}
+          </Typography>
           <CardContent>
-            <Typography gutterBottom variant='h5' component='div'>
-              {data.blogTitle && data.blogTitle}
-            </Typography>
             <Typography variant='body2' color='text.secondary'>
-              {data.blogDescription && data.blogDescription}
+              {data.blogDescription && data.blogDescription.slice(0, 300)}
             </Typography>
           </CardContent>
         </Card>
