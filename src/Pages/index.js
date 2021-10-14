@@ -15,3 +15,4 @@ export { default as ProductLanch } from "./Product_Lanch";
 export { default as ProtectionAssistance } from "./Protection_Assistance";
 export { default as ReimbursementRefund } from "./Reimbursement_Refund";
 export { default as SEO } from "./SEO";
+export { default as ContactUs } from "./ContactUs";

@@ -18,6 +18,7 @@ import {
   ProtectionAssistance,
   ReimbursementRefund,
   SEO,
+  ContactUs,
 } from "./Pages";
 import { Root_Routes } from "./Services/Routes/APP";
 
@@ -123,6 +124,12 @@ export const routes = [
     id: 117,
     path: Root_Routes?.seo,
     page: SEO,
+    exact: true,
+  },
+  {
+    id: 117,
+    path: Root_Routes?.contact_us,
+    page: ContactUs,
     exact: true,
   },
 ];

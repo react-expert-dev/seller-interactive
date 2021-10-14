@@ -11,8 +11,10 @@ import {
   Box,
   Button,
   useTheme,
+  Hidden,
+  IconButton,
 } from "@mui/material";
-import { Phone as PhoneIcon } from "@mui/icons-material";
+import { Phone as PhoneIcon, Menu as MenuIcon } from "@mui/icons-material";
 
 //user import
 
@@ -120,199 +122,247 @@ const whoAreWe = [
 export default function HideAppBar(props) {
   //states
 
+  const [open, setOpen] = useState(false);
+
   //hooks
 
   const theme = useTheme();
+
+  const handleDrawer = () => {};
 
   //show what we Do
 
   return (
     <Fragment>
-      <HideOnScroll {...props}>
-        <AppBar>
-          <Toolbar>
-            <Container>
-              <Box
-                display={" flex"}
-                justifyContent={"space-between"}
-                alignItems={"center"}
-              >
-                <Box display={" flex"} alignItems={"center"}>
-                  <Box width={150}>
-                    <img
-                      src={"/logo.jpg"}
-                      width={"100%"}
-                      alt={"Addian Management"}
-                    />
-                  </Box>
-                  <Box className={"dropdown"}>
-                    <Button padding={1} color={"inherit"} className={"dropbtn"}>
-                      What We Do
-                    </Button>
+      <Hidden mdDown>
+        <HideOnScroll {...props}>
+          <AppBar>
+            <Toolbar>
+              <Container>
+                <Box
+                  display={" flex"}
+                  justifyContent={"space-between"}
+                  alignItems={"center"}
+                >
+                  <Box display={" flex"} alignItems={"center"}>
+                    <Box width={150}>
+                      <img
+                        src={"/logo.jpg"}
+                        width={"100%"}
+                        alt={"Addian Management"}
+                      />
+                    </Box>
+                    <Box className={"dropdown"}>
+                      <Button
+                        padding={1}
+                        color={"inherit"}
+                        className={"dropbtn"}
+                      >
+                        What We Do
+                      </Button>
 
-                    <Box
-                      className="dropdown-content"
-                      sx={{
-                        backgroundColor: theme.palette.background.default,
-                        padding: 2,
-                      }}
-                    >
-                      <Box>
-                        <Typography
-                          color={theme.palette.primary.main}
-                          fontWeight={"bold"}
-                        >
-                          AMAZON SERVICES
-                        </Typography>
-                      </Box>
-                      {amazonArr?.map((ama, index) => (
-                        <Box
-                          key={`${index}-amazon-services-${ama?.id}`}
-                          sx={{
-                            padding: 1,
-                            color: theme.palette.common.black,
-                            ":hover": {
-                              backgroundColor: theme.palette.primary.main,
-                              color: theme.palette.common.white,
-                              borderRadius: 1,
-                            },
-                          }}
-                        >
-                          <Link
-                            href={ama?.href}
-                            underline={"none"}
-                            color={"inherit"}
-                            noWrap
+                      <Box
+                        className="dropdown-content"
+                        sx={{
+                          backgroundColor: theme.palette.background.default,
+                          padding: 2,
+                        }}
+                      >
+                        <Box>
+                          <Typography
+                            color={theme.palette.primary.main}
+                            fontWeight={"bold"}
                           >
-                            {ama?.title}
-                          </Link>
+                            AMAZON SERVICES
+                          </Typography>
                         </Box>
-                      ))}
+                        {amazonArr?.map((ama, index) => (
+                          <Box
+                            key={`${index}-amazon-services-${ama?.id}`}
+                            sx={{
+                              padding: 1,
+                              color: theme.palette.common.black,
+                              ":hover": {
+                                backgroundColor: theme.palette.primary.main,
+                                color: theme.palette.common.white,
+                                borderRadius: 1,
+                              },
+                            }}
+                          >
+                            <Link
+                              href={ama?.href}
+                              underline={"none"}
+                              color={"inherit"}
+                              noWrap
+                            >
+                              {ama?.title}
+                            </Link>
+                          </Box>
+                        ))}
+                      </Box>
+                    </Box>
+                    <Box className={"dropdown"}>
+                      <Button padding={1} color={"inherit"}>
+                        Who We Are
+                      </Button>
+                      <Box
+                        className="dropdown-content"
+                        sx={{
+                          backgroundColor: theme.palette.background.default,
+                          padding: 2,
+                        }}
+                      >
+                        <Box>
+                          <Typography
+                            color={theme.palette.primary.main}
+                            fontWeight={"bold"}
+                          >
+                            WHO ARE WE
+                          </Typography>
+                        </Box>
+                        {whoAreWe?.map((ama, index) => (
+                          <Box
+                            key={`${index}-amazon-services-${ama?.id}`}
+                            sx={{
+                              padding: 1,
+                              color: theme.palette.common.black,
+                              ":hover": {
+                                backgroundColor: theme.palette.primary.main,
+                                color: theme.palette.common.white,
+                                borderRadius: 1,
+                              },
+                            }}
+                          >
+                            <Link
+                              href={ama?.href}
+                              underline={"none"}
+                              color={"inherit"}
+                              noWrap
+                            >
+                              {ama?.title}
+                            </Link>
+                          </Box>
+                        ))}
+                      </Box>
+                    </Box>
+                    {/* Our clients */}
+                    <Box className={"dropdown"}>
+                      <Button padding={1} color={"inherit"}>
+                        Our Clients
+                      </Button>
+                      <Box
+                        className="dropdown-content"
+                        sx={{
+                          backgroundColor: theme.palette.background.default,
+                          padding: 2,
+                        }}
+                      >
+                        <Box>
+                          <Typography
+                            color={theme.palette.primary.main}
+                            fontWeight={"bold"}
+                            sx={{
+                              textTransform: "uppercase",
+                            }}
+                          >
+                            Our Clients
+                          </Typography>
+                        </Box>
+                        {ourClients?.map((ama, index) => (
+                          <Box
+                            key={`${index}-amazon-services-${ama?.id}`}
+                            sx={{
+                              padding: 1,
+                              color: theme.palette.common.black,
+                              ":hover": {
+                                backgroundColor: theme.palette.primary.main,
+                                color: theme.palette.common.white,
+                                borderRadius: 1,
+                              },
+                            }}
+                          >
+                            <Link
+                              href={ama?.href}
+                              underline={"none"}
+                              color={"inherit"}
+                              noWrap
+                            >
+                              {ama?.title}
+                            </Link>
+                          </Box>
+                        ))}
+                      </Box>
+                    </Box>
+                    <Box padding={1}>
+                      <Link
+                        color={"inherit"}
+                        href={Root_Routes?.blog}
+                        underline={"none"}
+                      >
+                        Blog
+                      </Link>
                     </Box>
                   </Box>
-                  <Box className={"dropdown"}>
-                    <Button padding={1} color={"inherit"}>
-                      Who We Are
-                    </Button>
-                    <Box
-                      className="dropdown-content"
-                      sx={{
-                        backgroundColor: theme.palette.background.default,
-                        padding: 2,
-                      }}
-                    >
-                      <Box>
-                        <Typography
-                          color={theme.palette.primary.main}
-                          fontWeight={"bold"}
-                        >
-                          WHO ARE WE
-                        </Typography>
-                      </Box>
-                      {whoAreWe?.map((ama, index) => (
-                        <Box
-                          key={`${index}-amazon-services-${ama?.id}`}
-                          sx={{
-                            padding: 1,
-                            color: theme.palette.common.black,
-                            ":hover": {
-                              backgroundColor: theme.palette.primary.main,
-                              color: theme.palette.common.white,
-                              borderRadius: 1,
-                            },
-                          }}
-                        >
-                          <Link
-                            href={ama?.href}
-                            underline={"none"}
-                            color={"inherit"}
-                            noWrap
-                          >
-                            {ama?.title}
-                          </Link>
-                        </Box>
-                      ))}
+                  <Box display={"flex"}>
+                    <Box>
+                      <Button
+                        color={"inherit"}
+                        component={"a"}
+                        startIcon={<PhoneIcon />}
+                      >
+                        1-800-820-3746
+                      </Button>
                     </Box>
-                  </Box>
-                  {/* Our clients */}
-                  <Box className={"dropdown"}>
-                    <Button padding={1} color={"inherit"}>
-                      Our Clients
-                    </Button>
-                    <Box
-                      className="dropdown-content"
-                      sx={{
-                        backgroundColor: theme.palette.background.default,
-                        padding: 2,
-                      }}
-                    >
-                      <Box>
-                        <Typography
-                          color={theme.palette.primary.main}
-                          fontWeight={"bold"}
-                          sx={{
-                            textTransform: "uppercase",
-                          }}
-                        >
-                          Our Clients
-                        </Typography>
-                      </Box>
-                      {ourClients?.map((ama, index) => (
-                        <Box
-                          key={`${index}-amazon-services-${ama?.id}`}
-                          sx={{
-                            padding: 1,
-                            color: theme.palette.common.black,
-                            ":hover": {
-                              backgroundColor: theme.palette.primary.main,
-                              color: theme.palette.common.white,
-                              borderRadius: 1,
-                            },
-                          }}
-                        >
-                          <Link
-                            href={ama?.href}
-                            underline={"none"}
-                            color={"inherit"}
-                            noWrap
-                          >
-                            {ama?.title}
-                          </Link>
-                        </Box>
-                      ))}
+                    <Box>
+                      <Button
+                        color={"inherit"}
+                        variant={"outlined"}
+                        href={Root_Routes?.contact_us}
+                      >
+                        Contact us
+                      </Button>
                     </Box>
-                  </Box>
-                  <Box padding={1}>
-                    <Link
-                      color={"inherit"}
-                      href={Root_Routes?.blog}
-                      underline={"none"}
-                    >
-                      Blog
-                    </Link>
                   </Box>
                 </Box>
-                <Box display={"flex"}>
-                  <Box>
-                    <Button
-                      color={"inherit"}
-                      component={"a"}
-                      startIcon={<PhoneIcon />}
-                    >
-                      1-800-820-3746
-                    </Button>
+              </Container>
+            </Toolbar>
+          </AppBar>
+        </HideOnScroll>
+      </Hidden>
+      <Hidden mdUp>
+        <HideOnScroll {...props}>
+          <AppBar>
+            <Toolbar>
+              <Container>
+                <Box
+                  display={" flex"}
+                  justifyContent={"space-between"}
+                  alignItems={"center"}
+                >
+                  <Box display={" flex"} alignItems={"center"}>
+                    <Box width={150}>
+                      <img
+                        src={"/logo.jpg"}
+                        width={"100%"}
+                        alt={"Addian Management"}
+                      />
+                    </Box>
                   </Box>
-                  <Box>
-                    <Button color={"inherit"} variant={"outlined"}>
-                      Contact us
-                    </Button>
+                  <Box
+                    sx={{
+                      color: theme.palette.common.white,
+                    }}
+                  >
+                    <IconButton onClick={handleDrawer}>
+                      <MenuIcon sx={{ color: theme.palette.common.white }} />
+                    </IconButton>
                   </Box>
                 </Box>
-              </Box>
-            </Container>
-          </Toolbar>
-        </AppBar>
-      </HideOnScroll>
+              </Container>
+            </Toolbar>
+          </AppBar>
+        </HideOnScroll>
+      </Hidden>
     </Fragment>
   );
 }

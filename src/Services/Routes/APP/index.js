@@ -16,4 +16,5 @@ export const Root_Routes = {
   reimbursement_refund: "/reimbursement_refund",
   wholesale_partnership_program: "/wholesale_partnership_program",
   platform_advertising: "/platform_advertising",
+  contact_us: "/contact_us",
 };
