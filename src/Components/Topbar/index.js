@@ -25,52 +25,61 @@ const amazonArr = [
   {
     id: 31,
     title: "Full Account Management",
-    href: "",
+    href: Root_Routes?.account_management,
     icon: "",
   },
   {
     id: 32,
     title: "Search Engine Optimization (SEO)",
+    href: Root_Routes?.seo,
     icon: "",
   },
   {
     id: 33,
     title: "Sponsored Ads Management (PPC)",
+    href: Root_Routes?.ppc,
     icon: "",
   },
   {
     id: 34,
     title: "Product Launch",
+    href: Root_Routes?.product_launch,
     icon: "",
   },
   {
     id: 35,
     title: "Listing Optimization",
+    href: Root_Routes?.listing_optimization,
     icon: "",
   },
   {
     id: 36,
     title: "Brand Protection & Assistance",
+    href: Root_Routes?.protection_asistance,
     icon: "",
   },
   {
     id: 37,
     title: "Account Suspension Appeal & Reinstatement",
+    href: Root_Routes?.appeal_reinstatement,
     icon: "",
   },
   {
     id: 38,
     title: "Reimbursement & Refund",
+    href: Root_Routes?.reimbursement_refund,
     icon: "",
   },
   {
     id: 39,
     title: "FBA Wholesale Partnership Program",
+    href: Root_Routes?.wholesale_partnership_program,
     icon: "",
   },
   {
     id: 40,
     title: "Amazon Demand-Side Platform Advertising",
+    href: Root_Routes?.platform_advertising,
     icon: "",
   },
 ];
@@ -170,7 +179,7 @@ export default function HideAppBar(props) {
                           }}
                         >
                           <Link
-                            href={"#"}
+                            href={ama?.href}
                             underline={"none"}
                             color={"inherit"}
                             noWrap
