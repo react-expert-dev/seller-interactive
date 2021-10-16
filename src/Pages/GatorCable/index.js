@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Box, Grid, Typography } from "@mui/material";
+import { Button, Box, Grid, Typography, OutlinedInput } from "@mui/material";
 import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
 const GatorCable = () => {
   return (
@@ -157,7 +157,126 @@ const GatorCable = () => {
           </Typography>
         </Grid>
       </Grid>
+      <Typography variant="subtitle1" sx={{ marginTop: 5 }}>
+        They had to try different approaches to fix the brand name issue.
+      </Typography>
+      <Typography variant="subtitle1" sx={{ marginTop: 2 }}>
+        Among these methods are:
+      </Typography>
+      <div style={{ display: "flex", marginTop: 25 }}>
+        <DoubleArrowIcon style={{ paddingLeft: 20, paddingRight: 10 }} />
+        <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>
+          Using bulk upload sheet
+        </Typography>
+      </div>
+      <div style={{ display: "flex" }}>
+        <DoubleArrowIcon style={{ paddingLeft: 20, paddingRight: 10 }} />
+        <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>
+          Performing a full update and partial update and
+        </Typography>
+      </div>
+      <div style={{ display: "flex" }}>
+        <DoubleArrowIcon style={{ paddingLeft: 20, paddingRight: 10 }} />
+        <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>
+          Deleting and relisting the product
+        </Typography>
+      </div>
+      <Typography variant="h3" sx={{ fontWeight: 800, marginTop: 10 }}>
+        Executing best practices to hit the goal
+      </Typography>
+      <Typography variant="subtitle1" sx={{ marginTop: 3 }}>
+        To ensure that all the products were properly and visibly rebranded, SI
+        had to carry out a strategic process. It involved detailing all product
+        information, deleting the product, and then relisting it after the
+        mandatory 24-hour wait period. Then, they went ahead with manual delete
+        operation since bulk upload did not work for a few listings.
+      </Typography>
+      <Typography variant="subtitle1" sx={{ marginTop: 3 }}>
+        For some listings, SI had to perform multiple delete operations. They
+        had to list the product at least five times to get the brand name to
+        reflect accurately.
+      </Typography>
+      <Typography variant="h3" sx={{ fontWeight: 800, marginTop: 10 }}>
+        Hitting the Goal
+      </Typography>
+      <Typography variant="subtitle1" sx={{ marginTop: 3 }}>
+        The SI team and Gator Cable‘s collaborative efforts were fruitful.
+        Optimization was done and completed towards the end of February 2020. As
+        proven by the certified data illustrated below, Gator Cable sales have
+        increased significantly by March 2020.
+      </Typography>
+      <div style={{textAlign:"center"}}>
+      <img
+            style={{ borderRadius: "2%", marginTop: 50 }}
+            src={"/gatorcable2.png"}
+            width={"70%"}
+            alt={"Addian Management"}
+          />
+      </div>
+      <Typography variant="h3" sx={{ fontWeight: 800, marginTop: 10, textAlign:"center" }}>
+      Want to be another success story?
+      </Typography>
+      <Grid container spacing={1} sx={{ marginBottom: 10 }}>
+          <Grid item xs={12} sm={12} md={6} lg={6}>
+            <Typography
+              variant="h4"
+              gutterBottom
+              component="div"
+              sx={{
+                marginTop: 5,
+                fontWeight: 800,
+              }}
+            >
+              Contact Us.
+            </Typography>
+            <Typography variant="subtitle1" gutterBottom component="div">
+              Let us get to know you better.
+            </Typography>{" "}
+            <Typography
+              variant="subtitle1"
+              gutterBottom
+              component="div"
+              sx={{ marginTop: -1 }}
+            >
+              Book a free Amazon Seller account audit with our consultants.
+            </Typography>{" "}
+            <Typography variant="h6" gutterBottom component="div" sx={{marginTop:3}}>
+              During your audit our consultants will:
+            </Typography>
+            <ul style={{ lineHeight: 1.5 }}>
+              <li>Discuss ways we can meet your business goals</li>
+              <li>Perform an Amazon brand and competitor analysis</li>
+              <li>Show how our expertise can help you kickstart your sales</li>
+            </ul>
+          </Grid>
+
+          <Grid
+            item
+            xs={12}
+            sm={12}
+            md={6}
+            lg={4}
+            sx={{
+              marginTop: 8,
+            }}
+          >
+            <Typography variant="h6" gutterBottom component="div">
+              Email *
+            </Typography>
+            <OutlinedInput placeholder="Enter email" sx={{ width: "100%" }} />
+            <Button
+              variant="contained"
+              sx={{
+                marginTop: 3,
+              }}
+            >
+              Get in touch
+            </Button>
+          </Grid>
+          <Grid item xs={2}></Grid>
+        </Grid>
     </Box>
+
   );
 };
 
