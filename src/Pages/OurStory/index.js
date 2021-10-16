@@ -1,5 +1,6 @@
 import React, { memo } from "react";
 import OurPartners from "../../Components/OurPartners";
+import ThrivingAmazon from "../../Components/ThrivingAmazon";
 //package import
 
 import { Button, Grid, Typography, Box } from "@mui/material";
@@ -193,8 +194,8 @@ const OurStory = () => {
         </Grid>
         <Grid xs={2}></Grid>
       </Grid>
-   
       <OurPartners />
+      <ThrivingAmazon />
     </Box>
   );
 };
