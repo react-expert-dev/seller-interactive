@@ -20,6 +20,7 @@ import {
   SEO,
   ContactUs,
 } from "./Pages";
+import GatorCable from "./Pages/GatorCable";
 import { Root_Routes } from "./Services/Routes/APP";
 
 export const routes = [
@@ -130,6 +131,12 @@ export const routes = [
     id: 117,
     path: Root_Routes?.contact_us,
     page: ContactUs,
+    exact: true,
+  },
+  {
+    id: 1118,
+    path: Root_Routes?.gator_cable,
+    page: GatorCable,
     exact: true,
   },
 ];
