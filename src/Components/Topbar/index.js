@@ -13,6 +13,7 @@ import {
   useTheme,
   Hidden,
   IconButton,
+  Drawer,
 } from "@mui/material";
 import { Phone as PhoneIcon, Menu as MenuIcon } from "@mui/icons-material";
 
@@ -20,102 +21,10 @@ import { Phone as PhoneIcon, Menu as MenuIcon } from "@mui/icons-material";
 
 import { HideOnScroll } from "./HideOnScroll";
 import { Root_Routes } from "../../Services/Routes/APP";
+import { amazonArr, whoAreWe, ourClients } from "../../constants";
+import ListingDrawer from "./Drawer";
 
 //constants
-
-const amazonArr = [
-  {
-    id: 31,
-    title: "Full Account Management",
-    href: Root_Routes?.account_management,
-    icon: "",
-  },
-  {
-    id: 32,
-    title: "Search Engine Optimization (SEO)",
-    href: Root_Routes?.seo,
-    icon: "",
-  },
-  {
-    id: 33,
-    title: "Sponsored Ads Management (PPC)",
-    href: Root_Routes?.ppc,
-    icon: "",
-  },
-  {
-    id: 34,
-    title: "Product Launch",
-    href: Root_Routes?.product_launch,
-    icon: "",
-  },
-  {
-    id: 35,
-    title: "Listing Optimization",
-    href: Root_Routes?.listing_optimization,
-    icon: "",
-  },
-  {
-    id: 36,
-    title: "Brand Protection & Assistance",
-    href: Root_Routes?.protection_asistance,
-    icon: "",
-  },
-  {
-    id: 37,
-    title: "Account Suspension Appeal & Reinstatement",
-    href: Root_Routes?.appeal_reinstatement,
-    icon: "",
-  },
-  {
-    id: 38,
-    title: "Reimbursement & Refund",
-    href: Root_Routes?.reimbursement_refund,
-    icon: "",
-  },
-  {
-    id: 39,
-    title: "FBA Wholesale Partnership Program",
-    href: Root_Routes?.wholesale_partnership_program,
-    icon: "",
-  },
-  {
-    id: 40,
-    title: "Amazon Demand-Side Platform Advertising",
-    href: Root_Routes?.platform_advertising,
-    icon: "",
-  },
-];
-
-const ourClients = [
-  {
-    id: `client-1`,
-    href: Root_Routes?.case_studies,
-    title: "Case Studies",
-  },
-  {
-    id: `client-2`,
-    href: Root_Routes?.testimonials,
-    title: "Client Testimonials",
-  },
-];
-
-const whoAreWe = [
-  {
-    id: `client-1`,
-    href: Root_Routes?.seller_interactive,
-    title: "Why Seller Interactive?",
-  },
-  {
-    id: `client-2`,
-    href: Root_Routes?.ourstory,
-    title: "Our Story",
-  },
-  {
-    id: `client-2`,
-    href: Root_Routes?.our_team,
-    title: "Our Team",
-  },
-];
 
 //component
 
@@ -128,7 +37,9 @@ export default function HideAppBar(props) {
 
   const theme = useTheme();
 
-  const handleDrawer = () => {};
+  const handleDrawer = () => {
+    setOpen(!open);
+  };
 
   //show what we Do
 
@@ -193,8 +104,15 @@ export default function HideAppBar(props) {
                               href={ama?.href}
                               underline={"none"}
                               color={"inherit"}
+                              sx={{
+                                display: "flex",
+                                alignItems: "center",
+                              }}
                               noWrap
                             >
+                              <Box component={"span"} mr={2}>
+                                {ama?.icon}
+                              </Box>
                               {ama?.title}
                             </Link>
                           </Box>
@@ -357,6 +275,19 @@ export default function HideAppBar(props) {
                       <MenuIcon sx={{ color: theme.palette.common.white }} />
                     </IconButton>
                   </Box>
+                  <Drawer
+                    anchor={"right"}
+                    open={open}
+                    onClose={handleDrawer}
+                    sx={{
+                      width: 320,
+                    }}
+                    variant={"temporary"}
+                  >
+                    <Box width={320}>
+                      <ListingDrawer handleDrawer={handleDrawer} />
+                    </Box>
+                  </Drawer>
                 </Box>
               </Container>
             </Toolbar>
