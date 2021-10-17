@@ -22,6 +22,7 @@ import {
 } from "./Pages";
 import GatorCable from "./Pages/GatorCable";
 import HairBurst from "./Pages/HairBurst";
+import QuenchCo from "./Pages/QuenchCo";
 import { Root_Routes } from "./Services/Routes/APP";
 
 export const routes = [
@@ -144,6 +145,12 @@ export const routes = [
     id: 119,
     path: Root_Routes?.hair_burst,
     page: HairBurst,
+    exact: true,
+  },
+  {
+    id: 120,
+    path: Root_Routes?.quench_co,
+    page: QuenchCo,
     exact: true,
   },
 ];
