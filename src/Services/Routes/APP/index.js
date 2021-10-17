@@ -17,5 +17,6 @@ export const Root_Routes = {
   wholesale_partnership_program: "/wholesale_partnership_program",
   platform_advertising: "/platform_advertising",
   contact_us: "/contact_us",
-  gator_cable:"/gator_cable"
+  gator_cable:"/gator_cable",
+  hair_burst: "/hair_burst",
 };
