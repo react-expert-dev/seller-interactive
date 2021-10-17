@@ -13,16 +13,10 @@ const GaurdianAthletic = () => {
             width={"100%"}
             alt={"Addian Management"}
           />
-          <Typography
-            variant="h1"
-            sx={{ position: "relative", top: -300 }}
-          >
+          <Typography variant="h1" sx={{ position: "relative", top: -300 }}>
             Gaurdian Athletic
           </Typography>
-          <Typography
-            variant="h2"
-            sx={{ position: "relative", top: -300 }}
-          >
+          <Typography variant="h2" sx={{ position: "relative", top: -300 }}>
             Case Study.
           </Typography>
           <Typography
@@ -174,24 +168,26 @@ const GaurdianAthletic = () => {
         </Typography>
       </div>
       <Typography variant="h3" sx={{ fontWeight: 800, marginTop: 10 }}>
-      Hard-Earned Victory At-last
+        Hard-Earned Victory At-last
       </Typography>
-      <Typography variant="subtitle1" sx={{marginTop:3}}>
-      Seller Interactive proofed all the listings, and supporting evidence for the shipment was provided. In this case, 70 units weighing 2.0 FL OZ did not
-match what Amazon was expecting. This was promptly addressed. Within 24-hours, the brand received great news - the 69 units that were
-misplaced were now fully reimbursed, amounting to $3,289.92.
-        </Typography>
-        <Typography variant="subtitle1" sx={{marginTop:5}}>
-          Providing evidence that the brand shipped out the correct number of
-          units as declared in the shipment and that there was a weight
-          discrepancy
-        </Typography>
-        <Typography variant="subtitle1" sx={{marginTop:3}}>
-          Providing evidence that the brand shipped out the correct number of
-          units as declared in the shipment and that there was a weight
-          discrepancy
-        </Typography>
-        <div style={{ textAlign: "center", marginTop: 40 }}>
+      <Typography variant="subtitle1" sx={{ marginTop: 3 }}>
+        Seller Interactive proofed all the listings, and supporting evidence for
+        the shipment was provided. In this case, 70 units weighing 2.0 FL OZ did
+        not match what Amazon was expecting. This was promptly addressed. Within
+        24-hours, the brand received great news - the 69 units that were
+        misplaced were now fully reimbursed, amounting to $3,289.92.
+      </Typography>
+      <Typography variant="subtitle1" sx={{ marginTop: 5 }}>
+        Providing evidence that the brand shipped out the correct number of
+        units as declared in the shipment and that there was a weight
+        discrepancy
+      </Typography>
+      <Typography variant="subtitle1" sx={{ marginTop: 3 }}>
+        Providing evidence that the brand shipped out the correct number of
+        units as declared in the shipment and that there was a weight
+        discrepancy
+      </Typography>
+      <div style={{ textAlign: "center", marginTop: 40 }}>
         <img
           style={{ borderRadius: "2%" }}
           src={"/gaurdian3.png"}
