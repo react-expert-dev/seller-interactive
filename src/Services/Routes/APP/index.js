@@ -19,4 +19,5 @@ export const Root_Routes = {
   contact_us: "/contact_us",
   gator_cable:"/gator_cable",
   hair_burst: "/hair_burst",
+  quench_co: "/quench_co",
 };
