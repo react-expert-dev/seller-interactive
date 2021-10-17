@@ -1,6 +1,8 @@
 import React from "react";
 import { Box, Grid, Typography } from "@mui/material";
 import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
+import ContactUsSection from "../../Components/ContactUsSection";
+import "./style.css"
 const WokenCoffee = () => {
   return (
     <Box sx={{ flexGrow: 1, marginTop: 10 }}>
@@ -31,28 +33,14 @@ const WokenCoffee = () => {
         <Grid item xs={12} sm={12} md={6} lg={6}>
           <Typography
             variant="subtitle1"
-            sx={{
-              fontWeight: 600,
-              backgroundColor: "red",
-              color: "white",
-              paddingLeft: 2,
-              paddingTop: 1,
-              paddingBottom: 0.5,
-              width: "28%",
-              marginLeft: "auto",
-              marginTop: -5,
-            }}
+           className="howWeHelpedDiv"
           >
             HOW WE HELPED
           </Typography>
           <Typography
             variant="h4"
-            sx={{
-              fontWeight: 800,
-              textAlign: "right",
-              marginTop: 2,
-              paddingLeft: 20,
-            }}
+            className="salesIncreament"
+           
           >
             INCREASED SALES FROM $12K TO $14K IN JUST ONE MONTH
           </Typography>
@@ -337,6 +325,7 @@ const WokenCoffee = () => {
           </Typography>
         </Grid>
       </Grid>
+      <ContactUsSection />
     </Box>
   );
 };
