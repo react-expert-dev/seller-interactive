@@ -23,6 +23,7 @@ import {
 import GatorCable from "./Pages/GatorCable";
 import HairBurst from "./Pages/HairBurst";
 import QuenchCo from "./Pages/QuenchCo";
+import SoloNutrition from "./Pages/SoloNutrition";
 import { Root_Routes } from "./Services/Routes/APP";
 
 export const routes = [
@@ -151,6 +152,12 @@ export const routes = [
     id: 120,
     path: Root_Routes?.quench_co,
     page: QuenchCo,
+    exact: true,
+  },
+  {
+    id: 121,
+    path: Root_Routes?.solo_nutrition,
+    page: SoloNutrition,
     exact: true,
   },
 ];
