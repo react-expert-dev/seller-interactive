@@ -21,4 +21,5 @@ export const Root_Routes = {
   hair_burst: "/hair_burst",
   quench_co: "/quench_co",
   solo_nutrition: "/solo_nutrition",
+  woken_coffee: "/woken_coffee",
 };
