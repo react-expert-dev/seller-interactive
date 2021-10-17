@@ -2,6 +2,7 @@ import React from "react";
 import { Box, Grid, Typography } from "@mui/material";
 import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
 import ContactUsSection from "../../Components/ContactUsSection";
+import "./style.css";
 const SoloNutrition = () => {
   return (
     <Box sx={{ flexGrow: 1, marginTop: 10 }}>
@@ -21,52 +22,52 @@ const SoloNutrition = () => {
           </Typography>
         </Grid>
         <Grid item xs={12} sm={12} md={5} lg={5}>
-          <div style={{ marginTop: 130 }}>
+          <div  className="categoriesList">
             <Typography
               variant="subtitle1"
-              sx={{ fontWeight: 600, textAlign: "right" }}
+              sx={{ fontWeight: 600, }}
             >
               CATEGORY:
             </Typography>
             <Typography
               variant="subtitle1"
-              sx={{ fontWeight: 600, textAlign: "right", marginTop: 1 }}
+              sx={{ fontWeight: 600, marginTop: 1 }}
             >
               Nutrition & Protein Bars
             </Typography>
             <Typography
               variant="subtitle1"
-              sx={{ fontWeight: 600, textAlign: "right", marginTop: 2 }}
+              sx={{ fontWeight: 600, marginTop: 2 }}
             >
               MARKETS MANAGED:
             </Typography>
             <Typography
               variant="subtitle1"
-              sx={{ fontWeight: 600, textAlign: "right", marginTop: 1 }}
+              sx={{ fontWeight: 600,  marginTop: 1 }}
             >
               CA & US
             </Typography>
             <Typography
               variant="subtitle1"
-              sx={{ fontWeight: 600, textAlign: "right", marginTop: 2 }}
+              sx={{ fontWeight: 600, marginTop: 2 }}
             >
               ASINS:
             </Typography>
             <Typography
               variant="subtitle1"
-              sx={{ fontWeight: 600, textAlign: "right", marginTop: 1 }}
+              sx={{ fontWeight: 600, marginTop: 1 }}
             >
               15 ASINs
             </Typography>
             <Typography
               variant="subtitle1"
-              sx={{ fontWeight: 600, textAlign: "right", marginTop: 2 }}
+              sx={{ fontWeight: 600, marginTop: 2 }}
             >
               MONTHLY SALES:
             </Typography>
             <Typography
               variant="subtitle1"
-              sx={{ fontWeight: 600, textAlign: "right", marginTop: 1 }}
+              sx={{ fontWeight: 600, marginTop: 1 }}
             >
               $20k
             </Typography>
