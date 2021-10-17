@@ -1,12 +1,11 @@
-
-  .categoriesList{
-    margin-top: 130px;
-    text-align: right;
-        }
+.categoriesList {
+  margin-top: 130px;
+  text-align: right;
+}
 @media only screen and (max-width: 600px) {
-    .categoriesList{
-margin-bottom: 200px;
-margin-top: -230px;
-text-align: left;
-    }
+  .categoriesList {
+    margin-bottom: 200px;
+    margin-top: -230px;
+    text-align: left;
   }
+}
