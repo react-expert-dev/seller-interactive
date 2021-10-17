@@ -21,6 +21,7 @@ import {
   ContactUs,
 } from "./Pages";
 import GatorCable from "./Pages/GatorCable";
+import HairBurst from "./Pages/HairBurst";
 import { Root_Routes } from "./Services/Routes/APP";
 
 export const routes = [
@@ -134,9 +135,15 @@ export const routes = [
     exact: true,
   },
   {
-    id: 1118,
+    id: 118,
     path: Root_Routes?.gator_cable,
     page: GatorCable,
+    exact: true,
+  },
+  {
+    id: 119,
+    path: Root_Routes?.hair_burst,
+    page: HairBurst,
     exact: true,
   },
 ];
