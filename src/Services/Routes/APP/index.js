@@ -20,4 +20,5 @@ export const Root_Routes = {
   gator_cable:"/gator_cable",
   hair_burst: "/hair_burst",
   quench_co: "/quench_co",
+  solo_nutrition: "/solo_nutrition",
 };
