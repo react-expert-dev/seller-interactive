@@ -21,6 +21,7 @@ import {
   ContactUs,
 } from "./Pages";
 import GatorCable from "./Pages/GatorCable";
+import GaurdianAthletic from "./Pages/GaurdianAthletic";
 import HairBurst from "./Pages/HairBurst";
 import QuenchCo from "./Pages/QuenchCo";
 import SoloNutrition from "./Pages/SoloNutrition";
@@ -172,6 +173,12 @@ export const routes = [
     id: 123,
     path: Root_Routes?.tribella,
     page: Tribella,
+    exact: true,
+  },
+  {
+    id: 124,
+    path: Root_Routes?.gaurdian_athletic,
+    page: GaurdianAthletic,
     exact: true,
   },
 ];

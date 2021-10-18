@@ -23,4 +23,5 @@ export const Root_Routes = {
   solo_nutrition: "/solo_nutrition",
   woken_coffee: "/woken_coffee",
   tribella: "/tribella",
+  gaurdian_athletic: "/gaurdian_athletic",
 };
