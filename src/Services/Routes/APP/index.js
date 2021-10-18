@@ -22,4 +22,5 @@ export const Root_Routes = {
   quench_co: "/quench_co",
   solo_nutrition: "/solo_nutrition",
   woken_coffee: "/woken_coffee",
+  tribella: "/tribella",
 };

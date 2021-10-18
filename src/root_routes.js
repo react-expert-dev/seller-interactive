@@ -24,6 +24,7 @@ import GatorCable from "./Pages/GatorCable";
 import HairBurst from "./Pages/HairBurst";
 import QuenchCo from "./Pages/QuenchCo";
 import SoloNutrition from "./Pages/SoloNutrition";
+import Tribella from "./Pages/Tribella";
 import WokenCoffee from "./Pages/WokenCoffee";
 import { Root_Routes } from "./Services/Routes/APP";
 
@@ -165,6 +166,12 @@ export const routes = [
     id: 122,
     path: Root_Routes?.woken_coffee,
     page: WokenCoffee,
+    exact: true,
+  },
+  {
+    id: 123,
+    path: Root_Routes?.tribella,
+    page: Tribella,
     exact: true,
   },
 ];
