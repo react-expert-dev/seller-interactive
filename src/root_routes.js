@@ -26,6 +26,7 @@ import HairBurst from "./Pages/HairBurst";
 import QuenchCo from "./Pages/QuenchCo";
 import SoloNutrition from "./Pages/SoloNutrition";
 import Tribella from "./Pages/Tribella";
+import VortexEnterprise from "./Pages/VortexEnterprise";
 import WokenCoffee from "./Pages/WokenCoffee";
 import { Root_Routes } from "./Services/Routes/APP";
 
@@ -179,6 +180,12 @@ export const routes = [
     id: 124,
     path: Root_Routes?.gaurdian_athletic,
     page: GaurdianAthletic,
+    exact: true,
+  },
+  {
+    id: 125,
+    path: Root_Routes?.vortex_enterprise,
+    page: VortexEnterprise,
     exact: true,
   },
 ];
