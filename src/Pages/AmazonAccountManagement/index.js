@@ -1,7 +1,7 @@
 import React from "react";
 import { Button, Grid, Typography, Box } from "@mui/material";
-import OurPartners from "../../Components/OurPartners";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import OurPartners from "../../Components/OurPartners";
 import "./style.css";
 const AmazonAccountMangement = () => {
   return (
