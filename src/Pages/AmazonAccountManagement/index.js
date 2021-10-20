@@ -1,8 +1,33 @@
 import React from "react";
 import { Button, Grid, Typography, Box } from "@mui/material";
-import LatestPosts from '../../Components/LatestPosts';
 import OurPartners from "../../Components/OurPartners";
 import "./style.css";
+
+const blogPosts = [
+  {
+    id: `blog-post-3`,
+    url: "/amazon5.jpg",
+    postdate: "OCTOBER 14, 2021",
+    posttitle: "Amazon DSP Program: Why It's Worth Investing on It This 2021",
+    postcontent:
+      "If you're already selling on Amazon, you know how tight the competition is. So it's only reasonable that you do everything you can to increase leverage against your competitors. This is one of the reasons why you should consider enrolling in the Amazon DSP Program. Learn more about what this advertising program is all about […]",
+  },
+  {
+    id: `blog-post-2`,
+    url: "/amazon6.jpg",
+    postdate: "OCTOBER 13, 2021",
+    posttitle:
+      "Top 4 Mistakes New Sellers Make Without Amazon Management Services",
+    postcontent: "So you're planning on setting up a seller account to begin your eCommerce journey on Amazon. Congratulations! Amazon is the largest online marketplace, so this opportunity could lead you to a bright future. In 2019, Amazon produced 354 billion US Dollars annually from eCommerce sales. Today, Amazon continues to dominate the eCommerce business, with projected […]",
+  },
+  {
+    id: `blog-post-3`,
+    url: "/amazon7.jpg",
+    postdate: "OCTOBER 12, 2021",
+    posttitle: "How an Amazon FBA Account Manager Will Make Your Business Amazon-Compliant",
+    postcontent: "When you're selling on Amazon, you’re up against so many other sellers on the platform. This is why so many people decide to work with an Amazon FBA account manager. Aside from leveraging your advantage against all your other competitors, they provide guidance and in other areas of your business, including making your business Amazon […]",
+  },
+];
 const AmazonAccountMangement = () => {
   return (
     <Box
@@ -432,7 +457,46 @@ const AmazonAccountMangement = () => {
           </Grid>
         </Grid>
       </Grid>
-      <LatestPosts />
+      <Grid container spacing={7} direction="row">
+        {blogPosts?.map((sucess, index) => (
+          <Grid
+            item
+            xs={12}
+            md={4}
+            sm={12}
+            lg={4}
+            key={`${index}-blog-post-${sucess?.id}`}
+          >
+            <Box>
+              <div className="latestPostDiv">
+                <img
+                  className="postImage"
+                  style={{ borderRadius: "2%", textAlign: "center" }}
+                  src={sucess?.url}
+                  width={"90%"}
+                  alt={"Addian Management"}
+                />
+                <Typography
+                  sx={{ fontWeight: 600, marginTop: 1 }}
+                  className="postDate"
+                >
+                  {sucess?.postdate}
+                </Typography>
+                <Typography
+                  variant="h6"
+                  sx={{ fontWeight: 600, marginTop: 1 }}
+                  className="postTitle"
+                >
+                  {sucess?.posttitle}
+                </Typography>
+                <Typography sx={{ marginTop: 1 }} className="postContent">
+                  {sucess?.postcontent}
+                </Typography>
+              </div>
+            </Box>
+          </Grid>
+        ))}
+      </Grid>
       <OurPartners />
       <Grid container spacing={2}>
         <Grid
