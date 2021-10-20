@@ -7,7 +7,7 @@ export const Root_Routes = {
   seller_interactive: "/seller_interactive",
   our_team: "/our_team",
   account_management: "/account_management",
-  amazon_seo: "/amazon_seo",
+  seo: "/seo",
   ppc: "/ppc",
   product_launch: "/product_launch",
   listing_optimization: "/listing_optimization",
