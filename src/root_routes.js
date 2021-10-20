@@ -130,7 +130,7 @@ export const routes = [
   },
   {
     id: 117,
-    path: Root_Routes?.seo,
+    path: Root_Routes?.amazon_seo,
     page: SEO,
     exact: true,
   },
