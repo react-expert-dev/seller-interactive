@@ -1,6 +1,20 @@
 import { Root_Routes } from "../Services/Routes/APP";
 
-import { AccountManagement, SEO, ADS } from "../SVG/header";
+import {
+  AccountManagement,
+  SEO,
+  ADS,
+  ProtectionAssistance,
+  Advertising,
+  Optimization,
+  OurStory,
+  OurTeam,
+  PartnershipProgram,
+  ProudctLaunch,
+  Refund,
+  Reinstatement,
+  SellerInteractive,
+} from "../SVG/header";
 
 export const amazonArr = [
   {
@@ -25,43 +39,43 @@ export const amazonArr = [
     id: 34,
     title: "Product Launch",
     href: Root_Routes?.product_launch,
-    icon: "",
+    icon: <ProudctLaunch width={32} height={32} />,
   },
   {
     id: 35,
     title: "Listing Optimization",
     href: Root_Routes?.listing_optimization,
-    icon: "",
+    icon: <Optimization width={32} height={32} />,
   },
   {
     id: 36,
     title: "Brand Protection & Assistance",
     href: Root_Routes?.protection_asistance,
-    icon: "",
+    icon: <ProtectionAssistance width={32} height={32} />,
   },
   {
     id: 37,
     title: "Account Suspension Appeal & Reinstatement",
     href: Root_Routes?.appeal_reinstatement,
-    icon: "",
+    icon: <Reinstatement width={32} height={32} />,
   },
   {
     id: 38,
     title: "Reimbursement & Refund",
     href: Root_Routes?.reimbursement_refund,
-    icon: "",
+    icon: <Refund width={32} height={32} />,
   },
   {
     id: 39,
     title: "FBA Wholesale Partnership Program",
     href: Root_Routes?.wholesale_partnership_program,
-    icon: "",
+    icon: <PartnershipProgram width={32} height={32} />,
   },
   {
     id: 40,
     title: "Amazon Demand-Side Platform Advertising",
     href: Root_Routes?.platform_advertising,
-    icon: "",
+    icon: <Advertising width={32} height={32} />,
   },
 ];
 
@@ -83,15 +97,18 @@ export const whoAreWe = [
     id: `client-1`,
     href: Root_Routes?.seller_interactive,
     title: "Why Seller Interactive?",
+    icon: <SellerInteractive width={32} height={32} />,
   },
   {
     id: `client-2`,
     href: Root_Routes?.ourstory,
     title: "Our Story",
+    icon: <OurStory width={32} height={32} />,
   },
   {
     id: `client-2`,
     href: Root_Routes?.our_team,
     title: "Our Team",
+    icon: <OurTeam width={32} height={32} />,
   },
 ];

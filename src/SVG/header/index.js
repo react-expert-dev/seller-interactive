@@ -1,3 +1,13 @@
 export { default as AccountManagement } from "./AccountManagement";
-export { default as SEO } from "./SEO";
 export { default as ADS } from "./ADS";
+export { default as Advertising } from "./Advertising";
+export { default as Optimization } from "./Optimization";
+export { default as OurStory } from "./OurStory";
+export { default as OurTeam } from "./OurTeam";
+export { default as PartnershipProgram } from "./PartnershipProgram";
+export { default as ProtectionAssistance } from "./Protection_Assistance";
+export { default as ProudctLaunch } from "./ProudctLaunch";
+export { default as Refund } from "./Refund";
+export { default as Reinstatement } from "./Reinstatement";
+export { default as SellerInteractive } from "./SellerInteractive";
+export { default as SEO } from "./SEO";

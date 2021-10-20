@@ -23,6 +23,7 @@ import { HideOnScroll } from "./HideOnScroll";
 import { Root_Routes } from "../../Services/Routes/APP";
 import { amazonArr, whoAreWe, ourClients } from "../../constants";
 import ListingDrawer from "./Drawer";
+import Logo from "../../SVG/Logo_2";
 
 //constants
 
@@ -56,12 +57,13 @@ export default function HideAppBar(props) {
                   alignItems={"center"}
                 >
                   <Box display={" flex"} alignItems={"center"}>
-                    <Box width={150}>
-                      <img
+                    <Box width={160} component={"a"} href={Root_Routes?.root}>
+                      {/* <img
                         src={"/logo.jpg"}
                         width={"100%"}
                         alt={"Addian Management"}
-                      />
+                      /> */}
+                      <Logo width={160} height={80} />
                     </Box>
                     <Box className={"dropdown"}>
                       <Button
@@ -155,8 +157,15 @@ export default function HideAppBar(props) {
                               href={ama?.href}
                               underline={"none"}
                               color={"inherit"}
+                              sx={{
+                                display: "flex",
+                                alignItems: "center",
+                              }}
                               noWrap
                             >
+                              <Box component={"span"} mr={2}>
+                                {ama?.icon}
+                              </Box>
                               {ama?.title}
                             </Link>
                           </Box>
@@ -216,6 +225,9 @@ export default function HideAppBar(props) {
                         color={"inherit"}
                         href={Root_Routes?.blog}
                         underline={"none"}
+                        sx={{
+                          textTransform: "uppercase",
+                        }}
                       >
                         Blog
                       </Link>
@@ -258,12 +270,8 @@ export default function HideAppBar(props) {
                   alignItems={"center"}
                 >
                   <Box display={" flex"} alignItems={"center"}>
-                    <Box width={150}>
-                      <img
-                        src={"/logo.jpg"}
-                        width={"100%"}
-                        alt={"Addian Management"}
-                      />
+                    <Box width={160}>
+                      <Logo width={160} height={80} />
                     </Box>
                   </Box>
                   <Box

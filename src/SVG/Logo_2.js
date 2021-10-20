@@ -1,15 +1,23 @@
 import React from "react";
 
-const Logo = ({ width, height }) => {
+const Logo2 = ({ width, height }) => {
   return (
     <svg
-      width={width ? width : 480}
-      height={height ? height : 480}
-      viewBox="0 0 480 480"
+      viewBox="282.503 135.567 468.749 221.913"
+      width={width ? width : 468.749}
+      height={height ? height : 221.913}
     >
-      <g id="g10" transform="matrix(1.3333333,0,0,-1.3333333,0,480)">
+      <defs>
+        <clipPath clipPathUnits="userSpaceOnUse" id="clipPath20">
+          <path d="M 0,360 H 360 V 0 H 0 Z" id="path18"></path>
+        </clipPath>
+      </defs>
+      <g
+        id="g10"
+        transform="matrix(1.518909, 0, 0, -0.86451, 255.077393, 404.595978)"
+      >
         <path
-          d="M 0,0 H 360 V 360 H 0 Z"
+          d="M 18.056 54.501 L 326.665 54.501 L 326.665 311.193 L 18.056 311.193 Z"
           style={{
             fill: "none",
             fillOpacity: 1,
@@ -17,8 +25,11 @@ const Logo = ({ width, height }) => {
             stroke: "none",
           }}
           id="path12"
-        />
-        <g id="g14">
+        ></path>
+        <g
+          id="g14"
+          transform="matrix(1.491554, 0, 0, 1.826933, -96.581894, -148.034409)"
+        >
           <g id="g16" clip-path="url(#clipPath20)">
             <g id="g22" transform="translate(98.631,146.3623)">
               <path
@@ -30,7 +41,7 @@ const Logo = ({ width, height }) => {
                   stroke: "none",
                 }}
                 id="path24"
-              />
+              ></path>
             </g>
             <g id="g26" transform="translate(107.3351,142.1982)">
               <path
@@ -42,7 +53,7 @@ const Logo = ({ width, height }) => {
                   stroke: "none",
                 }}
                 id="path28"
-              />
+              ></path>
             </g>
             <g id="g30" transform="translate(119.1974,142.1982)">
               <path
@@ -54,7 +65,7 @@ const Logo = ({ width, height }) => {
                   stroke: "none",
                 }}
                 id="path32"
-              />
+              ></path>
             </g>
             <path
               d="m 128.946,144.28 h 1.108 v -10.055 h -1.108 z m 0,3.397 h 1.108 v -1.669 h -1.108 z"
@@ -65,7 +76,7 @@ const Logo = ({ width, height }) => {
                 stroke: "none",
               }}
               id="path34"
-            />
+            ></path>
             <g id="g36" transform="translate(133.9689,142.1982)">
               <path
                 d="m 0,0 c -0.798,-0.812 -1.196,-1.771 -1.196,-2.908 0,-1.137 0.398,-2.082 1.196,-2.894 0.812,-0.812 1.786,-1.196 2.908,-1.196 1.138,0 2.112,0.384 2.895,1.196 0.811,0.812 1.211,1.757 1.211,2.894 0,1.137 -0.4,2.096 -1.211,2.908 C 4.99,0.812 4.046,1.196 2.908,1.196 1.786,1.196 0.812,0.812 0,0 M 6.599,0.769 C 7.619,-0.236 8.12,-1.461 8.12,-2.908 V -7.973 H 7.014 v 1.64 c 0,0.028 -0.031,0.044 -0.06,0.073 -0.045,0.015 -0.073,0 -0.09,-0.029 C 5.803,-7.5 4.487,-8.12 2.908,-8.12 c -1.432,0 -2.658,0.503 -3.677,1.535 -1.018,1.02 -1.519,2.245 -1.519,3.677 0,1.432 0.501,2.658 1.519,3.677 1.019,1.033 2.245,1.535 3.677,1.535 1.446,0 2.657,-0.502 3.691,-1.535"
@@ -76,7 +87,7 @@ const Logo = ({ width, height }) => {
                   stroke: "none",
                 }}
                 id="path38"
-              />
+              ></path>
             </g>
             <g id="g40" transform="translate(150.3781,143.3057)">
               <path
@@ -88,7 +99,7 @@ const Logo = ({ width, height }) => {
                   stroke: "none",
                 }}
                 id="path42"
-              />
+              ></path>
             </g>
             <g id="g44" transform="translate(168.6173,146.0078)">
               <path
@@ -100,7 +111,7 @@ const Logo = ({ width, height }) => {
                   stroke: "none",
                 }}
                 id="path46"
-              />
+              ></path>
             </g>
             <g id="g48" transform="translate(172.3624,142.1982)">
               <path
@@ -112,7 +123,7 @@ const Logo = ({ width, height }) => {
                   stroke: "none",
                 }}
                 id="path50"
-              />
+              ></path>
             </g>
             <g id="g52" transform="translate(188.7716,143.3057)">
               <path
@@ -124,7 +135,7 @@ const Logo = ({ width, height }) => {
                   stroke: "none",
                 }}
                 id="path54"
-              />
+              ></path>
             </g>
             <g id="g56" transform="translate(193.6925,142.1982)">
               <path
@@ -136,7 +147,7 @@ const Logo = ({ width, height }) => {
                   stroke: "none",
                 }}
                 id="path58"
-              />
+              ></path>
             </g>
             <g id="g60" transform="translate(205.5558,142.1982)">
               <path
@@ -148,7 +159,7 @@ const Logo = ({ width, height }) => {
                   stroke: "none",
                 }}
                 id="path62"
-              />
+              ></path>
             </g>
             <g id="g64" transform="translate(217.713,142.4502)">
               <path
@@ -160,7 +171,7 @@ const Logo = ({ width, height }) => {
                   stroke: "none",
                 }}
                 id="path66"
-              />
+              ></path>
             </g>
             <g id="g68" transform="translate(238.6847,143.4834)">
               <path
@@ -172,7 +183,7 @@ const Logo = ({ width, height }) => {
                   stroke: "none",
                 }}
                 id="path70"
-              />
+              ></path>
             </g>
             <g id="g72" transform="translate(243.7423,142.4502)">
               <path
@@ -184,7 +195,7 @@ const Logo = ({ width, height }) => {
                   stroke: "none",
                 }}
                 id="path74"
-              />
+              ></path>
             </g>
             <g id="g76" transform="translate(259.8566,143.3057)">
               <path
@@ -196,7 +207,7 @@ const Logo = ({ width, height }) => {
                   stroke: "none",
                 }}
                 id="path78"
-              />
+              ></path>
             </g>
             <g id="g80" transform="translate(263.5968,144.502)">
               <path
@@ -208,7 +219,7 @@ const Logo = ({ width, height }) => {
                   stroke: "none",
                 }}
                 id="path82"
-              />
+              ></path>
             </g>
             <g id="g84" transform="translate(241.4161,229.1846)">
               <path
@@ -220,7 +231,7 @@ const Logo = ({ width, height }) => {
                   stroke: "none",
                 }}
                 id="path86"
-              />
+              ></path>
             </g>
             <g id="g88" transform="translate(173.6964,190.0854)">
               <path
@@ -232,7 +243,7 @@ const Logo = ({ width, height }) => {
                   stroke: "none",
                 }}
                 id="path90"
-              />
+              ></path>
             </g>
           </g>
         </g>
@@ -241,4 +252,4 @@ const Logo = ({ width, height }) => {
   );
 };
 
-export default Logo;
+export default Logo2;

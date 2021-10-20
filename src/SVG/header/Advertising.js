@@ -1,8 +1,13 @@
 import React from "react";
 
-const Advertising = () => {
+const Advertising = ({ width, height }) => {
   return (
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 33.42 28.96">
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width={width ? width : 32}
+      height={height ? height : 32}
+      viewBox="0 0 33.42 28.96"
+    >
       <g id="Layer_2" data-name="Layer 2">
         <g id="Layer_1-2" data-name="Layer 1">
           <path

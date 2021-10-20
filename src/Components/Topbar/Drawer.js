@@ -104,9 +104,7 @@ const Drawer = ({ handleDrawer }) => {
                 sx={{ pl: 2 }}
                 onClick={() => clickHandler(ama?.href)}
               >
-                <ListItemIcon>
-                  <StarBorder />
-                </ListItemIcon>
+                <ListItemIcon>{ama?.icon}</ListItemIcon>
                 <ListItemText primary={ama?.title} />
               </ListItemButton>
             ))}
