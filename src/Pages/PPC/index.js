@@ -8,20 +8,20 @@ import ThrivingAmazon from "../../Components/ThrivingAmazon"
 const postData = [
   {
     id: `blog-post-3`,
-    url: "/amazon5.jpg",
-    postdate: "OCTOBER 14, 2021",
-    posttitle: "Amazon DSP Program: Why It's Worth Investing on It This 2021",
+    url: "/ppc5.jpg",
+    postdate: "OCTOBER 18, 2021",
+    posttitle: "Understanding The Different Classes of Amazon Reimbursements",
     postcontent:
-      "If you're already selling on Amazon, you know how tight the competition is. So it's only reasonable that you do everything you can to increase leverage against your competitors. This is one of the reasons why you should consider enrolling in the Amazon DSP Program. Learn more about what this advertising program is all about […]",
+      "Have you ever been reimbursed by Amazon? If so, what classes of reimbursement did you receive? Unfortunately, many sellers are unaware of the process for refund reimbursements for Amazon FBA. Many even wonder why Amazon is paying you back at all! In this blog post, we'll examine the different types of Amazon reimbursements and how […]",
   },
   {
     id: `blog-post-2`,
-    url: "/amazon6.jpg",
-    postdate: "OCTOBER 13, 2021",
+    url: "/ppc6.jpg",
+    postdate: "OCTOBER 16, 2021",
     posttitle:
-      "Top 4 Mistakes New Sellers Make Without Amazon Management Services",
+      "4 Ways How an Amazon Listing Optimization Service Can Help Improve Your Listings",
     postcontent:
-      "So you're planning on setting up a seller account to begin your eCommerce journey on Amazon. Congratulations! Amazon is the largest online marketplace, so this opportunity could lead you to a bright future. In 2019, Amazon produced 354 billion US Dollars annually from eCommerce sales. Today, Amazon continues to dominate the eCommerce business, with projected […]",
+      "Did you know that a third of all product searches start on Amazon? With the immense volume of traffic the platform gets every day, it is no surprise that many businesses are looking for ways to improve their rankings and increase visibility. That is where a reliable Amazon listing optimization service comes in handy! In […]",
   },
   {
     id: `blog-post-3`,
@@ -130,7 +130,7 @@ const PPC = () => {
             style={{
               borderRadius: "2%",
             }}
-            src={"/seo1.jpg"}
+            src={"/ppc1.jpg"}
             width={"100%"}
             alt={"Addian Management"}
           />{" "}
@@ -193,7 +193,7 @@ const PPC = () => {
         <Grid item xs={12} sm={12} md={7} lg={7}>
           <img
             style={{ borderRadius: "2%" }}
-            src={"/seo5.jpg"}
+            src={"/ppc2.jpg"}
             width={"100%"}
             alt={"Addian Management"}
           />
@@ -203,7 +203,7 @@ const PPC = () => {
         <Grid item xs={12} sm={12} md={7} lg={7}>
           <img
             style={{ borderRadius: "2%" }}
-            src={"/seo6.jpg"}
+            src={"/ppc3.jpg"}
             width={"100%"}
             alt={"Addian Management"}
           />
@@ -270,7 +270,7 @@ const PPC = () => {
         <Grid item xs={12} sm={12} md={7} lg={7}>
           <img
             style={{ borderRadius: "2%" }}
-            src={"/seo5.jpg"}
+            src={"/ppc4.jpg"}
             width={"100%"}
             alt={"Addian Management"}
           />
@@ -310,7 +310,7 @@ const PPC = () => {
             <Grid item xs={12} sm={12} md={1} lg={1}>
               <img
                 style={{ borderRadius: "2%" }}
-                src={"/amazon5.svg"}
+                src={"/ppc1.svg"}
                 width={"60%"}
                 alt={"Addian Management"}
               />
@@ -331,7 +331,7 @@ const PPC = () => {
             <Grid item xs={12} sm={12} md={1} lg={1}>
               <img
                 style={{ borderRadius: "2%" }}
-                src={"/amazon6.svg"}
+                src={"/ppc2.svg"}
                 width={"60%"}
                 alt={"Addian Management"}
               />
@@ -351,7 +351,7 @@ const PPC = () => {
             <Grid item xs={12} sm={12} md={1} lg={1}>
               <img
                 style={{ borderRadius: "2%" }}
-                src={"/amazon7.svg"}
+                src={"/ppc3.svg"}
                 width={"60%"}
                 alt={"Addian Management"}
               />
