@@ -23,9 +23,9 @@ const App = () => {
             marginTop: 6,
           }}
         />
-        <Container>
-          <Routes />
-        </Container>
+        {/* <Container> */}
+        <Routes />
+        {/* </Container> */}
         <Footer />
       </Router>
     </>
