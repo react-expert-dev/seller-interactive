@@ -1,8 +1,8 @@
 import React from "react";
 import { Button, Box, Grid, Typography } from "@mui/material";
+import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import OurPartners from "../../Components/OurPartners";
 import ThrivingAmazon from "../../Components/ThrivingAmazon";
-import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 const SellerInteractives = () => {
   return (
     <Box sx={{ flexGrow: 1, marginTop: 10 }}>
