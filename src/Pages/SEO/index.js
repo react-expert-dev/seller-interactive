@@ -308,7 +308,7 @@ const AmazonSEO = () => {
         variant="h3"
         sx={{ fontWeight: 800, textAlign: "center", marginTop: 10 }}
       >
-        What is Amazon SEO?
+        Frequently Asked Questions.
       </Typography>
       <Grid container spacing={2} sx={{ marginTop: 5 }}>
         <Grid item xs={12} sm={12} md={2} lg={2}></Grid>
