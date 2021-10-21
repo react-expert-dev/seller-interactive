@@ -1,9 +1,9 @@
 import React from "react";
-import { Button, Grid, Typography, Box } from "@mui/material";
+import { Button, Grid, Typography, Box, CardMedia } from "@mui/material";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import LatestPosts from "../../Components/LatestPosts";
 import OurPartners from "../../Components/OurPartners";
-import ThrivingAmazon from "../../Components/ThrivingAmazon"
+import ThrivingAmazon from "../../Components/ThrivingAmazon";
 
 const postData = [
   {
@@ -391,11 +391,10 @@ const PPC = () => {
           </Typography>
         </Grid>
         <Grid item xs={12} sm={12} md={6} lg={6}>
-          <img
-            style={{ borderRadius: "2%" }}
-            src={"/seo5.jpg"}
-            width={"100%"}
-            alt={"Addian Management"}
+          <CardMedia
+            height="100%"
+            component="iframe"
+            image="https://www.youtube.com/embed/tnuNx6VmObs"
           />
         </Grid>
       </Grid>
@@ -423,7 +422,10 @@ const PPC = () => {
             quickly, whether they use it as an Amazon product launch service or
             to help boost the visibility of their existing listing.
           </Typography>
-          <Typography variant="subtitle1" sx={{ paddingLeft: 6, paddingTop:3 }}>
+          <Typography
+            variant="subtitle1"
+            sx={{ paddingLeft: 6, paddingTop: 3 }}
+          >
             PPC stands for Pay Per Click, a digital advertising term where you
             pay for the number of clicks your ad receives to increase the chance
             of sale with every click.
@@ -447,7 +449,10 @@ const PPC = () => {
             after a query. Once the shopper clicks on your ad, it comes out of
             your pocket, so it's essential to monitor your ad spend.
           </Typography>
-          <Typography variant="subtitle1" sx={{ paddingLeft: 6,paddingTop:3 }}>
+          <Typography
+            variant="subtitle1"
+            sx={{ paddingLeft: 6, paddingTop: 3 }}
+          >
             Because of this ad strategy's nature, conversation rates could
             become unpredictable advertising costs could fluctuate without
             proper management. It's important to consider all of your business's
