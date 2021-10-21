@@ -13,14 +13,17 @@ import {
   useTheme,
   Collapse,
   ListItemIcon,
+  IconButton,
 } from "@mui/material";
-import { ExpandLess, ExpandMore, StarBorder } from "@mui/icons-material";
+import { Close, ExpandLess, ExpandMore, StarBorder } from "@mui/icons-material";
+import { Phone as PhoneIcon } from "@mui/icons-material";
 import { useHistory } from "react-router-dom";
 
 //user import
 
 import { amazonArr, whoAreWe, ourClients } from "../../constants";
 import { Root_Routes } from "../../Services/Routes/APP";
+import Logo from "../../SVG/Logo_2";
 
 //component
 
@@ -53,6 +56,16 @@ const Drawer = ({ handleDrawer }) => {
   return (
     <Fragment>
       <List>
+        <Box display={"flex"} justifyContent={"space-between"} paddingX={2}>
+          <Box>
+            <Logo width={160} height={80} color={theme?.palette.common.black} />
+          </Box>
+          <Box>
+            <IconButton onClick={handleDrawer}>
+              <Close />
+            </IconButton>
+          </Box>
+        </Box>
         <ListItemButton onClick={amazonHandler}>
           <ListItemText primary="What We Do" />
           {amazon ? <ExpandLess /> : <ExpandMore />}
@@ -121,6 +134,28 @@ const Drawer = ({ handleDrawer }) => {
         <ListItemButton onClick={() => clickHandler(Root_Routes?.blog)}>
           <ListItemText primary="Blog" />
         </ListItemButton>
+        <Box padding={2}>
+          <Button
+            color={"inherit"}
+            component={"a"}
+            href={"tel:18008203746"}
+            variant={"outlined"}
+            fullWidth
+            startIcon={<PhoneIcon />}
+          >
+            1-800-820-3746
+          </Button>
+        </Box>
+        <Box padding={2}>
+          <Button
+            color={"primary"}
+            variant={"contained"}
+            href={Root_Routes?.contact_us}
+            fullWidth
+          >
+            Contact us
+          </Button>
+        </Box>
       </List>
     </Fragment>
   );

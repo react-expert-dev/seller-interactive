@@ -16,14 +16,18 @@ const App = () => {
 
   return (
     <>
-    <Router>
-      <Topbar />
-      <Toolbar />
-      <Container>
-        <Routes />
-      </Container>
-      <Footer />
-    </Router>
+      <Router>
+        <Topbar />
+        <Toolbar
+          sx={{
+            marginTop: 6,
+          }}
+        />
+        <Container>
+          <Routes />
+        </Container>
+        <Footer />
+      </Router>
     </>
   );
 };

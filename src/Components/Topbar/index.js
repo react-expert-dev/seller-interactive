@@ -238,6 +238,7 @@ export default function HideAppBar(props) {
                       <Button
                         color={"inherit"}
                         component={"a"}
+                        href={"tel:18008203746"}
                         startIcon={<PhoneIcon />}
                       >
                         1-800-820-3746
