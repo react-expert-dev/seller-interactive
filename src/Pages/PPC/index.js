@@ -1,6 +1,7 @@
-import React from "react";
+import React, {Fragment} from "react";
 import { Button, Grid, Typography, Box, CardMedia } from "@mui/material";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import Container from "@mui/material/Container";
 import LatestPosts from "../../Components/LatestPosts";
 import OurPartners from "../../Components/OurPartners";
 import ThrivingAmazon from "../../Components/ThrivingAmazon";
@@ -35,6 +36,8 @@ const postData = [
 ];
 const PPC = () => {
   return (
+    <Fragment>
+    <Container>
     <Box
       sx={{
         width: "100%",
@@ -521,6 +524,9 @@ const PPC = () => {
       <OurPartners />
       <ThrivingAmazon />
     </Box>
+    
+      </Container>
+      </Fragment>
   );
 };
 
