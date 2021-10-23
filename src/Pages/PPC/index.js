@@ -1,6 +1,7 @@
-import React from "react";
+import React, {Fragment} from "react";
 import { Button, Grid, Typography, Box, CardMedia } from "@mui/material";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
+import Container from "@mui/material/Container";
 import LatestPosts from "../../Components/LatestPosts";
 import OurPartners from "../../Components/OurPartners";
 import ThrivingAmazon from "../../Components/ThrivingAmazon";
@@ -35,6 +36,8 @@ const postData = [
 ];
 const PPC = () => {
   return (
+    <Fragment>
+    <Container>
     <Box
       sx={{
         width: "100%",
@@ -307,7 +310,7 @@ const PPC = () => {
         <Grid item xs={12} sm={12} md={1} lg={1}></Grid>
         <Grid item xs={12} sm={12} md={10} lg={10}>
           <Grid container spacing={2} sx={{ marginTop: 3 }}>
-            <Grid item xs={12} sm={12} md={1} lg={1}>
+            <Grid item xs={2} sm={2} md={1} lg={1}>
               <img
                 style={{ borderRadius: "2%" }}
                 src={"/ppc1.svg"}
@@ -315,7 +318,7 @@ const PPC = () => {
                 alt={"Addian Management"}
               />
             </Grid>
-            <Grid item xs={12} sm={12} md={11} lg={11}>
+            <Grid item xs={10} sm={10} md={11} lg={11}>
               <Typography sx={{ fontWeight: 600 }}>
                 Sponsored Products
               </Typography>
@@ -328,7 +331,7 @@ const PPC = () => {
           </Grid>
 
           <Grid container spacing={2} sx={{ marginTop: 1 }}>
-            <Grid item xs={12} sm={12} md={1} lg={1}>
+            <Grid item xs={2} sm={2} md={1} lg={1}>
               <img
                 style={{ borderRadius: "2%" }}
                 src={"/ppc2.svg"}
@@ -336,7 +339,7 @@ const PPC = () => {
                 alt={"Addian Management"}
               />
             </Grid>
-            <Grid item xs={12} sm={12} md={11} lg={11}>
+            <Grid item xs={10} sm={10} md={11} lg={11}>
               <Typography sx={{ fontWeight: 600 }}>Sponsored Brands</Typography>
               <Typography sx={{ paddingTop: 1 }}>
                 This solution—features your brand logo, customized headline, and
@@ -348,7 +351,7 @@ const PPC = () => {
           </Grid>
 
           <Grid container spacing={2} sx={{ marginTop: 1 }}>
-            <Grid item xs={12} sm={12} md={1} lg={1}>
+            <Grid item xs={2} sm={2} md={1} lg={1}>
               <img
                 style={{ borderRadius: "2%" }}
                 src={"/ppc3.svg"}
@@ -356,7 +359,7 @@ const PPC = () => {
                 alt={"Addian Management"}
               />
             </Grid>
-            <Grid item xs={12} sm={12} md={11} lg={11}>
+            <Grid item xs={10} sm={10} md={11} lg={11}>
               <Typography sx={{ fontWeight: 600 }}>
                 Product Photography
               </Typography>
@@ -521,6 +524,9 @@ const PPC = () => {
       <OurPartners />
       <ThrivingAmazon />
     </Box>
+    
+      </Container>
+      </Fragment>
   );
 };
 

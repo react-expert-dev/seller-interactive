@@ -1,5 +1,6 @@
 import React from "react";
 import { Button, Box, Grid, Typography } from "@mui/material";
+import "./style.css"
 const ThrivingAmazon = () => {
   return (
     <Box>
@@ -26,7 +27,7 @@ const ThrivingAmazon = () => {
             }}
           >
             <Grid item xs={2}></Grid>
-            <Grid item xs={8}>
+            <Grid item xs={12} sm={12} md={8} lg={8} sx={8}>
               <Typography
                 variant="h3"
                 sx={{
@@ -40,7 +41,7 @@ const ThrivingAmazon = () => {
               </Typography>
               <Typography
                 variant="subtitle1"
-                sx={{ marginTop: 3, paddingLeft: 10, paddingRight: 10 }}
+                className="thrivingAmazonContent"
               >
                 Use the power and influence of advertising to increase sales.
                 Learn more about how you can benefit from our management

@@ -1,5 +1,6 @@
 import React from "react";
 import { Box, Grid, Typography } from "@mui/material";
+import "./style.css"
 const OurPartners = () => {
   return (
     <Box>
@@ -24,15 +25,17 @@ const OurPartners = () => {
             alt={"Addian Management"}
           />
         </Grid>
-        <Grid item xs={2} sx={{ marginTop: 5 }}>
+        <Grid item xs={2}>
           <img
+          className="ourPartnersImage1"
             src={"/ourstory4.png"}
             width={"100%"}
             alt={"Addian Management"}
           />
         </Grid>
-        <Grid item xs={2} sx={{ marginTop: 4 }}>
+        <Grid item xs={2} >
           <img
+           className="ourPartnersImage2"
             src={"/ourstory5.png"}
             width={"100%"}
             alt={"Addian Management"}
@@ -45,8 +48,9 @@ const OurPartners = () => {
             alt={"Addian Management"}
           />
         </Grid>
-        <Grid item xs={2} sx={{ marginTop: 1 }}>
+        <Grid item xs={2}>
           <img
+           className="ourPartnersImage3"
             src={"/ourstory7.png"}
             width={"100%"}
             alt={"Addian Management"}
