@@ -1,0 +1,11 @@
+.platformAdvertisingImage {
+    margin-top: 330px;
+    border-radius: 5px;
+  }
+  @media only screen and (max-width: 600px) {
+    .platformAdvertisingImage {
+        margin-top: 20px;
+        border-radius: 5px;
+    }
+  }
+  
