@@ -1,0 +1,11 @@
+.partnershipProgramVideo {
+    margin-top: 480px;
+    height: 30%;
+  }
+  @media only screen and (max-width: 600px) {
+    .partnershipProgramVideo {
+        margin-top: 20px;
+        height: 100%;
+    }
+  }
+  
