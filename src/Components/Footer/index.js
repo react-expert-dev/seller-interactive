@@ -11,7 +11,8 @@ import {
 
 //user import
 
-import Logo from "../../SVG/logo";
+import Logo from "../../SVG/Logo_2";
+import { Root_Routes} from '../../Services/Routes/APP/index'
 
 //constants
 
@@ -19,52 +20,52 @@ const amazonArr = [
   {
     id: 1,
     title: "Full Account Management",
-    link: "/",
+    link: Root_Routes?.account_management,
   },
   {
     id: 2,
     title: "Search Engine Optimization (SEO)",
-    link: "/",
+    link: Root_Routes?.seo,
   },
   {
     id: 3,
     title: "Sponsored Ads Management (PPC)",
-    link: "/",
+    link: Root_Routes?.ppc,
   },
   {
     id: 4,
     title: "Product Launch",
-    link: "/",
+    link: Root_Routes?.product_launch,
   },
   {
     id: 5,
     title: "Listing Optimization",
-    link: "/",
+    link: Root_Routes?.listing_optimization,
   },
   {
     id: 6,
     title: "Brand Protection & Assistance",
-    link: "/",
+    link: Root_Routes?.protection_asistance,
   },
   {
     id: 7,
     title: "Account Suspension Appeal & Reinstatement",
-    link: "/",
+    link: Root_Routes?.appeal_reinstatement,
   },
   {
     id: 8,
     title: "Reimbursement & Refund",
-    link: "/",
+    link: Root_Routes?.reimbursement_refund,
   },
   {
     id: 9,
     title: "FBA Wholesale Partnership Program",
-    link: "/",
+    link: Root_Routes?.wholesale_partnership_program,
   },
   {
     id: 10,
     title: "Amazon Demand-Side Platform Advertising",
-    link: "/",
+    link: Root_Routes?.reimbursement_refund,
   },
 ];
 
@@ -72,17 +73,17 @@ const companyArr = [
   {
     id: 11,
     title: "Why Seller Interactive?",
-    link: "/",
+    link: Root_Routes?.seller_interactive,
   },
   {
     id: 12,
     title: "Our Story",
-    link: "/",
+    link: Root_Routes?.ourstory,
   },
   {
     id: 13,
     title: "Our Team",
-    link: "/",
+    link: Root_Routes?.our_team,
   },
 ];
 
@@ -90,12 +91,12 @@ const resourcesArr = [
   {
     id: 21,
     title: "Testimonials",
-    link: "/",
+    link:  Root_Routes?.testimonials,
   },
   {
     id: 22,
     title: "Blog",
-    link: "/",
+    link:  Root_Routes?.blog,
   },
 ];
 
@@ -130,8 +131,8 @@ const Footer = () => {
       <Grid container>
         <Grid item xs={12} sm={6} md={3}>
           <Box margin={2}>
-            <Box>Madian Management</Box>
-            <Box>{/* <Logo /> */}</Box>
+            {/* <Box>Madian Management</Box> */}
+            <Box><Logo width={160} height={80} /></Box>
             <Box paddingY={2}>
               <Typography variant={"body1"} fontWeight={"bold"}>
                 Get ahead on Amazon
