@@ -2,7 +2,7 @@ import React, { Fragment } from "react";
 
 //package import
 
-import { Container, Box, Grid, Typography, Link } from "@mui/material";
+import { Container, Box, Grid, Typography, Link ,useTheme} from "@mui/material";
 import {
   LinkedIn as LinkedInIcon,
   Facebook as FacebookIcon,
@@ -126,13 +126,14 @@ const contactArr = [
 //component
 
 const Footer = () => {
+  const theme = useTheme()
   return (
     <Container>
       <Grid container>
         <Grid item xs={12} sm={6} md={3}>
           <Box margin={2}>
             
-            <Box><Logo width={160} height={80} /></Box>
+            <Box><Logo width={160} height={80} color={theme?.palette.primary.main} /></Box>
             <Box paddingY={2}>
               <Typography variant={"body1"} fontWeight={"bold"}>
                 Get ahead on Amazon
