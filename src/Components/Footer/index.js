@@ -131,7 +131,7 @@ const Footer = () => {
       <Grid container>
         <Grid item xs={12} sm={6} md={3}>
           <Box margin={2}>
-            {/* <Box>Madian Management</Box> */}
+            
             <Box><Logo width={160} height={80} /></Box>
             <Box paddingY={2}>
               <Typography variant={"body1"} fontWeight={"bold"}>
