@@ -1,10 +1,13 @@
-import React from "react";
+import React, {Fragment} from "react";
+import { Container } from "@mui/material";
 import { Button, Box, Grid, Typography } from "@mui/material";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import OurPartners from "../../Components/OurPartners";
 import ThrivingAmazon from "../../Components/ThrivingAmazon";
 const SellerInteractives = () => {
   return (
+    <Fragment>
+      <Container>
     <Box sx={{ flexGrow: 1, marginTop: 10 }}>
       <Grid container spacing={2}>
         <Grid item xs={12} sm={12} md={6} lg={6}>
@@ -266,6 +269,8 @@ const SellerInteractives = () => {
       <OurPartners />
       <ThrivingAmazon />
     </Box>
+    </Container>
+    </Fragment>
   );
 };
 

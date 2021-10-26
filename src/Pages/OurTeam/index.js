@@ -1,4 +1,5 @@
-import React from "react";
+import React, {Fragment} from "react";
+import { Container } from "@mui/material";
 import { Button, Box, Grid, Typography } from "@mui/material";
 import OurPartners from "../../Components/OurPartners";
 import ThrivingAmazon from "../../Components/ThrivingAmazon";
@@ -133,6 +134,8 @@ const ourTeamMembers = [
 
 const OurTeam = () => {
   return (
+    <Fragment>
+      <Container>
     <Box sx={{ flexGrow: 1, marginTop: 10 }}>
       <Grid container spacing={2}>
         <Grid item xs={12} sm={12} md={6} lg={6}>
@@ -213,6 +216,8 @@ const OurTeam = () => {
       <OurPartners />
       <ThrivingAmazon />
     </Box>
+    </Container>
+    </Fragment>
   );
 };
 

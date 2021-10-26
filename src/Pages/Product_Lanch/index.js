@@ -1,5 +1,5 @@
 import React, { Fragment } from "react";
-import { Button, Grid, Typography, Box, CardMedia } from "@mui/material";
+import { Button, Grid, Typography, Box } from "@mui/material";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import LatestPosts from "../../Components/LatestPosts";
 import Container from "@mui/material/Container";

@@ -1,4 +1,5 @@
-import React from "react";
+import React, {Fragment} from "react";
+import { Container } from "@mui/material";
 import {
   OutlinedInput,
   Button,
@@ -72,6 +73,8 @@ const CaseStudies = () => {
   //render
 
   return (
+    <Fragment>
+      <Container>
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
         <Grid item xs={12} md={8} lg={8}>
@@ -235,6 +238,8 @@ const CaseStudies = () => {
       </div>
       <Box></Box>
     </Box>
+    </Container>
+    </Fragment>
   );
 };
 
