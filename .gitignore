@@ -28,3 +28,4 @@ yarn.lock
 package-lock.json
 
 install_nvm.sh
+.eslintcache
