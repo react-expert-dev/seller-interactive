@@ -1,13 +1,10 @@
 import React, { Fragment } from "react";
-import { Container } from "@mui/material";
+import { Container,MobileStepper,Paper,Button, Grid, Typography, Box } from "@mui/material";
 import { useTheme } from '@mui/material/styles';
-import MobileStepper from '@mui/material/MobileStepper';
-import Paper from '@mui/material/Paper';;
-import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
+
+import {KeyboardArrowLeft, KeyboardArrowRight as KeyboardArrowRightIcon } from '@mui/icons-material';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
-import { Button, Grid, Typography, Box} from "@mui/material";
-import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 
 //user import
 
@@ -17,7 +14,7 @@ import ThrivingAmazon from "../../Components/ThrivingAmazon";
 
 //component
 
-const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
+
 
 const images = [
   {
@@ -137,6 +134,7 @@ const postData = [
 
 const Home = () => {
   const theme = useTheme();
+  const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
   const [activeStep, setActiveStep] = React.useState(0);
   const maxSteps = images.length;
 
@@ -252,12 +250,12 @@ const Home = () => {
                   {sucess?.solutionContent}
                 </Typography>
                 <Button
-                  variant="outlined"
+                  variant="text"
                   endIcon={<KeyboardArrowRightIcon />}
                   sx={{
                     marginTop: 3,
                     border: "none",
-                    marginLeft: -2,
+                    
                   }}
                 >
                   Learn More
