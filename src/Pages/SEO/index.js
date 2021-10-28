@@ -1,4 +1,5 @@
-import React from "react";
+import React, {Fragment} from "react";
+import { Container } from "@mui/material";
 import { Button, Grid, Typography, Box } from "@mui/material";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
@@ -36,6 +37,8 @@ const postData = [
 
 const AmazonSEO = () => {
   return (
+    <Fragment>
+      <Container>
     <Box
       sx={{
         width: "100%",
@@ -469,6 +472,8 @@ const AmazonSEO = () => {
         </Grid>
       </Grid>
     </Box>
+    </Container>
+    </Fragment>
   );
 };
 

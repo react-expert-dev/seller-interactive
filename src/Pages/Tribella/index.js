@@ -1,9 +1,12 @@
-import React from "react";
+import React, {Fragment} from "react";
+import { Container } from "@mui/material";
 import { Box, Grid, Typography } from "@mui/material";
 import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
 import ContactUsSection from "../../Components/ContactUsSection";
 const Tribella = () => {
   return (
+    <Fragment>
+    <Container>
     <Box sx={{ flexGrow: 1, marginTop: 10 }}>
       <Grid container spacing={2}>
         <Grid item xs={12} sm={12} md={7} lg={7}>
@@ -217,6 +220,8 @@ const Tribella = () => {
       </div>
       <ContactUsSection />
     </Box>
+    </Container>
+    </Fragment>
   );
 };
 

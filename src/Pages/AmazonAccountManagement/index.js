@@ -1,4 +1,5 @@
-import React from "react";
+import React, {Fragment} from "react";
+import { Container } from "@mui/material";
 import { Button, Grid, Typography, Box } from "@mui/material";
 import OurPartners from "../../Components/OurPartners";
 import "./style.css";
@@ -30,6 +31,8 @@ const blogPosts = [
 ];
 const AmazonAccountMangement = () => {
   return (
+    <Fragment>
+      <Container>
     <Box
       sx={{
         width: "100%",
@@ -555,6 +558,8 @@ const AmazonAccountMangement = () => {
         </Grid>
       </Grid>
     </Box>
+    </Container>
+    </Fragment>
   );
 };
 

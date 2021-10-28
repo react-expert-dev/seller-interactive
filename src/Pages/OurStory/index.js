@@ -1,4 +1,5 @@
-import React, { memo } from "react";
+import React, {Fragment} from "react";
+import { Container } from "@mui/material";
 import OurPartners from "../../Components/OurPartners";
 import ThrivingAmazon from "../../Components/ThrivingAmazon";
 //package import
@@ -11,6 +12,8 @@ const OurStory = () => {
   //render
 
   return (
+    <Fragment>
+      <Container>
     <Box
       sx={{
         width: "100%",
@@ -197,7 +200,9 @@ const OurStory = () => {
       <OurPartners />
       <ThrivingAmazon />
     </Box>
+    </Container>
+    </Fragment>
   );
 };
 
-export default memo(OurStory);
+export default OurStory;
