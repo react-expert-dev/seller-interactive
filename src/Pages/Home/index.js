@@ -10,7 +10,8 @@ import { autoPlay } from 'react-swipeable-views-utils';
 
 import { Hero, OurPartners, WorldBrands } from "./components";
 import LatestPosts from "../../Components/LatestPosts";
-import ThrivingAmazon from "../../Components/ThrivingAmazon";
+import ThrivingAmazon from "../../Components/ThrivingAmazon"
+import './style.css';
 
 //component
 
@@ -18,25 +19,48 @@ import ThrivingAmazon from "../../Components/ThrivingAmazon";
 
 const images = [
   {
-    label: 'San Francisco – Oakland Bay Bridge, United States',
+    reviewTitle: '"An all-star solution!"',
+    reviewContent: '"From the moment we started together, I was assigned very skilled project manager who took the time to understand the status of my business, and my goals going forward. Several calls and e-mails later we had an agreeable strategy… and budget. In very short order, my Amazon presence was refreshed and testing of our strategy had commenced... I am 100% delighted."',
     imgPath:
-      'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60',
+      './reviewer1.png',
+      reviewerName:'Skip Lei',
+      designation:'Owner, TriBella LLC'
   },
   {
-    label: 'Bird',
+    reviewTitle: '""I love that they do the write-ups""',
+    reviewContent: '"Our account team at Seller Interactive has been really great: they’re so quick to respond when we need new images or help to troubleshoot our Amazon listings. I love that they do the write-ups and A+ content focused on a few keywords that we can then bid aggressively on with Sponsored Products. I love the look of the images - they’re so much more professional and creative than what we could come up with ourselves. I think it’s really helped with conversions and gives customers confidence in our brand."',
     imgPath:
-      'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60',
+      './reviewer2.png',
+      reviewerName:'Joanna Shu',
+      designation:'COO, Refresh Skin Therapy'
   },
   {
-    label: 'Bali, Indonesia',
+    reviewTitle: '"The team at Seller Interactive know their stuff!"',
+    reviewContent: '"The team at Seller Interactive know their stuff! They took over all the Amazon work for my 65 SKUs, so I can focus on my core business. The SI team has not only been honest, but super diligent about improving my sales performance in a hyper-competitive product category! I am sticking with them for the long haul."',
     imgPath:
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250&q=80',
+      './reviewer3.png',
+      reviewerName:'Caeser Wong',
+      designation:'Owner, Gator Cable'
+  },
+
+  {
+    reviewTitle: '"Working with Seller Interactive has been a refreshing experience"',
+    reviewContent: '"Working with Seller Interactive has been a refreshing experience. Mohamed, has taken the project and owned it from start to finish. He has communicated clearly, always been on time and delivered to our expectations. Most importantly, they have delivered on month over month sales growth in a short time frame through Amazon. We will continue to work with SI and their talented team for the future."',
+    imgPath:
+      './review4.png',
+      reviewerName:'Ioanna Wilde',
+      designation:'Director of Marketing, SoLo Nutrition'
   },
   {
-    label: 'Goč, Serbia',
+    reviewTitle: '"Mohamed Aden at Seller Interactive has been extremely helpful"',
+    reviewContent: '"Mohamed Aden at Seller Interactive has been extremely helpful getting seven of my client’s products listed on Amazon. I look forward to working with Mohamed on three more new products that are now being considered."',
     imgPath:
-      'https://images.unsplash.com/photo-1512341689857-198e7e2f3ca8?auto=format&fit=crop&w=400&h=250&q=60',
+      './reviewer5.png',
+      reviewerName:'Donald Flynn',
+      designation:'Owner, Lanlay Cosmetics'
   },
+  
+
 ];
 
 const successStories = [
@@ -264,50 +288,19 @@ const Home = () => {
             </Grid>
           ))}
         </Grid>
-        <Grid container spacing={2} sx={{ marginBottom: 3 }}>
-            <Grid item xs={10} sm={10} md={6} lg={6}>
-              <Typography
-                variant="h3"
-                gutterBottom
-                component="div"
-                sx={{
-                  marginTop: 6,
-                  fontWeight: 800,
-                }}
-              >
-                Latest posts
-              </Typography>{" "}
-            </Grid>
-            <Grid item xs={12} sm={12} md={6} lg={6}>
-              <div style={{ textAlign: "right", marginTop: 70 }}>
-                <Grid container spacing={2}>
-                  <Grid item xs={12} sm={12} md={8} lg={8}></Grid>
-                  <Grid item xs={6} sm={6} md={3} lg={3}>
-                    <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>
-                      Explore our blog
-                    </Typography>
-                  </Grid>
-                  <Grid item xs={6} sm={6} md={1} lg={1}>
-                    <KeyboardArrowRightIcon style={{ marginTop: 2 }} />
-                  </Grid>
-                </Grid>
-              </div>
-            </Grid>
-          </Grid>
-        <Grid container spacing={2}>
-            <Grid container spacing={3}>
-              {postData.map((e, i) => {
-                return (
-                  <Grid spacing={1} item xs={12} sm={6} md={4} lg={4} xl={4}>
-                    <LatestPosts data={e} />
-                  </Grid>
-                );
-              })}
-            </Grid>
-          </Grid>
-          <ThrivingAmazon />
-
-          <Box sx={{ maxWidth: 400, flexGrow: 1 }}>
+        <Typography
+          variant="h3"
+          gutterBottom
+          component="div"
+          sx={{
+            marginTop: 10,
+            fontWeight: 800,
+            textAlign: "center",
+          }}
+        >
+         The good feelings are mutual.
+        </Typography>{" "}
+        <Box sx={{ maxWidth: "100%",height:450, marginBottom:3, flexGrow: 1 }}>
       <Paper
         square
         elevation={0}
@@ -326,26 +319,33 @@ const Home = () => {
         index={activeStep}
         onChangeIndex={handleStepChange}
         enableMouseEvents
+        
       >
         {images.map((step, index) => (
-          <div key={step.label}>
+          <div style={{textAlign:"center"}}>
+            <Typography variant="h4" sx={{marginBottom:3}}>{step.reviewTitle}</Typography>
+            <Typography variant="h5">{step.reviewContent}</Typography>
             {Math.abs(activeStep - index) <= 2 ? (
               <Box
                 component="img"
                 sx={{
-                  height: 255,
-                  display: 'block',
-                  maxWidth: 400,
+                 
+                  marginTop:5,
+                  maxWidth: "10%",
                   overflow: 'hidden',
-                  width: '100%',
+                  width: '20%',
                 }}
+
                 src={step.imgPath}
                 alt={step.label}
               />
             ) : null}
+            <Typography variant="subtitle1">{step.reviewerName}</Typography>
+            <Typography variant="h6">{step.designation}</Typography>
           </div>
         ))}
       </AutoPlaySwipeableViews>
+      
       <MobileStepper
         steps={maxSteps}
         position="static"
@@ -376,6 +376,50 @@ const Home = () => {
         }
       />
     </Box>
+        <Grid container spacing={2} className="latestPostStyle">
+            <Grid item xs={12} sm={12} md={6} lg={6}>
+              <Typography
+                variant="h3"
+                gutterBottom
+                component="div"
+                sx={{
+                  marginTop: 6,
+                  fontWeight: 800,
+                }}
+              >
+                Latest posts
+              </Typography>{" "}
+            </Grid>
+            <Grid item xs={12} sm={12} md={6} lg={6}>
+              <div  className="exploreStyle">
+                <Grid container spacing={2}>
+                  <Grid item xs={12} sm={12} md={8} lg={8}></Grid>
+                  <Grid item xs={6} sm={6} md={3} lg={3}>
+                    <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>
+                      Explore our blog
+                    </Typography>
+                  </Grid>
+                  <Grid item xs={6} sm={6} md={1} lg={1}>
+                    <KeyboardArrowRightIcon style={{ marginTop: 2 }} />
+                  </Grid>
+                </Grid>
+              </div>
+            </Grid>
+          </Grid>
+        <Grid container spacing={2}>
+            <Grid container spacing={3}>
+              {postData.map((e, i) => {
+                return (
+                  <Grid spacing={1} item xs={12} sm={6} md={4} lg={4} xl={4}>
+                    <LatestPosts data={e} />
+                  </Grid>
+                );
+              })}
+            </Grid>
+          </Grid>
+          <ThrivingAmazon />
+
+         
       </Container>
     </Fragment>
   );
