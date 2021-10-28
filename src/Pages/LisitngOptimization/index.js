@@ -53,9 +53,7 @@ const ListingOptimization = () => {
               xs={12}
               sm={12}
               md={6}
-              sx={{
-                marginTop: 8,
-              }}
+             
             >
               <Typography
                 variant="h3"
@@ -120,9 +118,7 @@ const ListingOptimization = () => {
               xs={12}
               sm={12}
               md={6}
-              sx={{
-                marginTop: 10,
-              }}
+             
             >
               <img
                 src={"/listing1.jpg"}

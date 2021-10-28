@@ -1,4 +1,5 @@
-import React from "react";
+import React, {Fragment} from "react";
+import { Container } from "@mui/material";
 
 //package import
 
@@ -15,6 +16,8 @@ import WorldBrands from "../../Components/WorldBrands";
 
 const ContactUs = () => {
   return (
+    <Fragment>
+    <Container>
     <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={1} sx={{ marginBottom: 5 }}>
         <Grid item xs={12} sm={12} md={6} lg={6}>
@@ -23,7 +26,6 @@ const ContactUs = () => {
             gutterBottom
             component="div"
             sx={{
-              marginTop: 10,
               fontWeight: 800,
             }}
           >
@@ -68,7 +70,7 @@ const ContactUs = () => {
         </Grid>
       </Grid>
       <WorldBrands />
-      <Box bgcolor={"#f7f9fa"} paddingY={{ md: 2, sm: 1.5, xs: 1 }}>
+      <Box paddingY={{ md: 2, sm: 1.5, xs: 1 }}>
         <Typography
           variant="h2"
           gutterBottom
@@ -113,6 +115,8 @@ const ContactUs = () => {
         </Grid>
       </Box>
     </Box>
+    </Container>
+    </Fragment>
   );
 };
 

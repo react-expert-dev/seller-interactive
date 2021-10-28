@@ -83,7 +83,6 @@ const CaseStudies = () => {
             gutterBottom
             component="div"
             sx={{
-              marginTop: 10,
               fontWeight: 800,
             }}
           >
