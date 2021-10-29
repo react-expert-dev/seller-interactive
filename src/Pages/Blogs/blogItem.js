@@ -12,7 +12,7 @@ const BlogItem = ({ data }) => {
     <>
       <div style={{ padding: '', margin: 4 }}>
         <Card
-          sx={{ maxWidth: 345, borderRadius: 4 }}
+          sx={{ maxWidth: 345, height:500, borderRadius: 4 }}
           style={{ padding: '20px' }}
         >
           <CardMedia
@@ -24,7 +24,7 @@ const BlogItem = ({ data }) => {
           />
           <CardHeader> {data.blogTitle && data.blogTitle}</CardHeader>
           <Typography gutterBottom variant='h5' component='div'>
-            {/* {data.blogTitle && data.blogTitle} */}
+            {data.blogTitle && data.blogTitle}
           </Typography>
           <CardContent>
             <Typography variant='body2' color='text.secondary'>
