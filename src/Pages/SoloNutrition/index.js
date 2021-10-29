@@ -8,7 +8,7 @@ const SoloNutrition = () => {
   return (
     <Fragment>
     <Container>
-    <Box sx={{ flexGrow: 1, marginTop: 10 }}>
+    <Box sx={{ flexGrow: 1 }}>
       <Grid container spacing={2}>
         <Grid item xs={12} sm={12} md={7} lg={7}>
           <img

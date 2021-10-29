@@ -57,16 +57,14 @@ const PPC = () => {
           xs={12}
           sm={12}
           md={6}
-          sx={{
-            marginTop: 8,
-          }}
+         
         >
           <Typography
             variant="h3"
             gutterBottom
             component="div"
             sx={{
-              marginTop: 10,
+              marginTop:10,
               fontWeight: 800,
             }}
           >
@@ -125,9 +123,7 @@ const PPC = () => {
           xs={12}
           sm={12}
           md={6}
-          sx={{
-            marginTop: 10,
-          }}
+        
         >
           <img
             style={{

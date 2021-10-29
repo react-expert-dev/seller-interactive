@@ -53,9 +53,6 @@ const ReimbursementRefund = () => {
               xs={12}
               sm={12}
               md={6}
-              sx={{
-                marginTop: 8,
-              }}
             >
               <Typography
                 variant="h3"
@@ -127,9 +124,6 @@ const ReimbursementRefund = () => {
               xs={12}
               sm={12}
               md={6}
-              sx={{
-                marginTop: 10,
-              }}
             >
               <img
                 src={"/refund1.jpg"}
