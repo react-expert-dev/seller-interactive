@@ -1,19 +1,17 @@
-import React from 'react'
+import React, {Fragment} from "react";
 import BlogItem from './blogItem'
 import Grid from '@mui/material/Grid'
 import { Link } from 'react-router-dom'
+import ThrivingAmazon from "../../Components/ThrivingAmazon";
 
 import {
   Container,
-  Box,
   Card,
   Typography,
   CardContent,
   CardHeader,
   CardMedia,
-  Button,
 } from '@mui/material'
-import { fontSize } from '@mui/system'
 //Images
 const pic1 = '/images/amazon-digital-marketing-agency.jpg'
 const pic2 = '/images/amazon-fba-consultant-scaled.jpeg'
@@ -142,8 +140,10 @@ What you see is what you get—in the world of e-commerce, you realize that this
 
 const Blog = () => {
   return (
+    <Fragment>
+    <Container>
     <div>
-      <h1>Blog page</h1>
+      
       <Card sx={{ margin: 4, borderRadius: 4 }}>
         <Grid container direction='row'>
           <Grid item sm={4} md={4} lg={4} xl={4}>
@@ -178,6 +178,7 @@ const Blog = () => {
         direction='row'
         justify='flex-start'
         alignItems='flex-start'
+        sx={{marginBottom:5}}
       >
         {blogData.map((e, i) => {
           return (
@@ -187,38 +188,10 @@ const Blog = () => {
           )
         })}
       </Grid>
-      <Container maxWidth='md'>
-        <Box
-          sx={{
-            borderRadius: 4,
-            bgcolor: '#fb3767',
-            height: '50vh',
-            backgroundImage: `url(${footerImg})`,
-
-            marginTop: '4px',
-          }}
-        >
-          <Container
-            style={{
-              width: '65%',
-              padding: '50px',
-              textAlign: 'center',
-              color: 'white',
-            }}
-          >
-            <h1 style={{ marginBottom: '8px' }}>
-              Go from surviving to thriving on Amazon.
-            </h1>
-            <p style={{ marginBottom: '20px' }}>
-              Use the power and influence of advertising to increase sales.
-              Learn more about how you can benefit from our management
-              expertise.
-            </p>
-            <Button>Talk Us</Button>
-          </Container>
-        </Box>
-      </Container>
+      <ThrivingAmazon />
     </div>
+    </Container>
+    </Fragment>
   )
 }
 
