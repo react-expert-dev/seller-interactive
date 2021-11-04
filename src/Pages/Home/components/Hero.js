@@ -35,6 +35,7 @@ const Hero = () => {
               <Button
                 variant={"contained"}
                 color={"primary"}
+                href="/contact_us"
                 sx={{
                   paddingX: 4,
                   paddiingY: 0.5,

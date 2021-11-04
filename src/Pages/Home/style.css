@@ -1,19 +1,14 @@
-.latestPostStyle {
-    margin-top: 40px;
-    margin-bottom: 30px;
-  }
-  .exploreStyle{
-      margin-top: 70px;
-      text-align: right;
-  }
+.latestPostsHeading{
+    margin-top: 0px;
+}
   @media only screen and (max-width: 600px) {
-    .latestPostStyle {
-        margin-top: 340px;
-        margin-bottom: 30px;
+    .latestPostsHeading{
+margin-top: 500px;
     }
-    .exploreStyle{
-        margin-top: 10px;
+    .exploreBlogBtn{
         text-align: left;
+        margin-top: -110px;
+        margin-bottom: 40px;
     }
   }
   
