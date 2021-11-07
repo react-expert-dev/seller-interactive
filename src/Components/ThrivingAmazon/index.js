@@ -1,7 +1,13 @@
 import React from "react";
 import { Button, Box, Grid, Typography } from "@mui/material";
+import { Root_Routes } from "../../Services/Routes/APP";
+import { useHistory } from "react-router-dom";
 import "./style.css"
 const ThrivingAmazon = () => {
+  const history = useHistory();
+  const clickHandler = (href) => {
+    history.push(href);   
+  };
   return (
     <Box>
       <Grid container spacing={2}>
@@ -49,6 +55,7 @@ const ThrivingAmazon = () => {
               </Typography>
               <Button
                 variant="contained"
+                onClick={() => clickHandler(Root_Routes?.contact_us)}
                 sx={{
                   marginTop: 6,
                 }}

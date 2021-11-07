@@ -10,6 +10,8 @@ import {
   Box,
 } from "@mui/material";
 import { useTheme } from "@mui/material/styles";
+import { Root_Routes } from "../../Services/Routes/APP";
+import { useHistory } from "react-router-dom";
 
 import {
   KeyboardArrowLeft,
@@ -176,6 +178,11 @@ const postData = [
 ];
 
 const Home = () => {
+  const history = useHistory();
+  const clickHandler = (href) => {
+    history.push(href);
+    
+  };
   const theme = useTheme();
   const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
   const [activeStep, setActiveStep] = React.useState(0);
@@ -224,16 +231,7 @@ const Home = () => {
               ensure results.
             </Typography>
 
-            <Button
-              variant="outlined"
-              endIcon={<KeyboardArrowRightIcon />}
-              sx={{
-                marginTop: 4,
-                border: "none",
-              }}
-            >
-              Account Suspended? Call Us Now!
-            </Button>
+          
           </Grid>
           <Grid item xs={12} sm={12} md={7} lg={7}>
             <img
@@ -429,7 +427,8 @@ const Home = () => {
             <Button
               variant="text"
               endIcon={<KeyboardArrowRightIcon />}
-              href="/blog"
+              onClick={() => clickHandler(Root_Routes?.blog)}
+             
               sx={{
                 marginTop: 8,
                 border: "none",

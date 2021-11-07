@@ -1,6 +1,8 @@
 import React, {Fragment} from "react";
 import { Container } from "@mui/material";
 import { Button, Box, Grid, Typography } from "@mui/material";
+import { Root_Routes } from "../../Services/Routes/APP";
+import { useHistory } from "react-router-dom";
 import OurPartners from "../../Components/OurPartners";
 import ThrivingAmazon from "../../Components/ThrivingAmazon";
 const ourTeamMembers = [
@@ -133,6 +135,10 @@ const ourTeamMembers = [
 ];
 
 const OurTeam = () => {
+  const history = useHistory();
+  const clickHandler = (href) => {
+    history.push(href);   
+  };
   return (
     <Fragment>
       <Container>
@@ -156,6 +162,7 @@ const OurTeam = () => {
           </Typography>
           <Button
             variant="contained"
+            onClick={() => clickHandler(Root_Routes?.contact_us)}
             sx={{
               marginTop: 6,
             }}

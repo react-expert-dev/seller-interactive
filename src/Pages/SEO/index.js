@@ -3,6 +3,8 @@ import { Container } from "@mui/material";
 import { Button, Grid, Typography, Box } from "@mui/material";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import DoubleArrowIcon from "@mui/icons-material/DoubleArrow";
+import { Root_Routes } from "../../Services/Routes/APP";
+import { useHistory } from "react-router-dom";
 import LatestPosts from "../../Components/LatestPosts";
 import OurPartners from "../../Components/OurPartners";
 
@@ -36,6 +38,10 @@ const postData = [
 ];
 
 const AmazonSEO = () => {
+  const history = useHistory();
+  const clickHandler = (href) => {
+    history.push(href);   
+  };
   return (
     <Fragment>
       <Container>
@@ -100,6 +106,7 @@ const AmazonSEO = () => {
           </Typography>{" "}
           <Button
             variant="contained"
+            onClick={() => clickHandler(Root_Routes?.contact_us)}
             sx={{
               marginTop: 5,
               borderRadius: 2,
@@ -249,6 +256,7 @@ const AmazonSEO = () => {
           <Button
             variant="outlined"
             endIcon={<KeyboardArrowRightIcon />}
+            onClick={() => clickHandler(Root_Routes?.contact_us)}
             sx={{
               marginTop: 4,
               border: "none",
@@ -294,6 +302,7 @@ const AmazonSEO = () => {
           <Button
             variant="outlined"
             endIcon={<KeyboardArrowRightIcon />}
+            onClick={() => clickHandler(Root_Routes?.contact_us)}
             sx={{
               marginTop: 4,
               border: "none",
@@ -369,36 +378,44 @@ const AmazonSEO = () => {
         </Grid>
         <Grid item xs={12} sm={12} md={2} lg={2}></Grid>
       </Grid>
-      <Grid container spacing={2} sx={{ marginBottom: 3 }}>
-        <Grid item xs={12} sm={12} md={6} lg={6}>
-          <Typography
-            variant="h3"
-            gutterBottom
-            component="div"
-            sx={{
-              marginTop: 6,
-              fontWeight: 800,
-            }}
-          >
-            Latest posts
-          </Typography>{" "}
+      <Grid container spacing={2}>
+          
+          <Grid item xs={12} sm={12} md={6} lg={6}>
+            <div  className="latestPostsHeading">
+            <Typography
+              variant="h3"
+              gutterBottom
+              component="div"
+             
+              sx={{
+                marginTop: 6,
+                marginBottom: 6,
+                fontWeight: 800,
+              }}
+            >
+              Latest posts
+            </Typography>{" "}
+            </div>
+          </Grid>
+          <Grid item xs={12} sm={12} md={6} lg={6} sx={{ textAlign: "right" }}>
+          <div  className="exploreBlogBtn">
+            <Button
+              variant="text"
+              endIcon={<KeyboardArrowRightIcon />}
+              onClick={() => clickHandler(Root_Routes?.blog)}
+             
+              sx={{
+                marginTop: 8,
+                border: "none",
+                fontWeight: 600,
+              }}
+            >
+              Explore our blog
+            </Button>
+            </div>
+          </Grid>
+        
         </Grid>
-        <Grid item xs={12} sm={12} md={6} lg={6}>
-          <div style={{ textAlign: "right", marginTop: 70 }}>
-            <Grid container spacing={2}>
-              <Grid item xs={12} sm={12} md={8} lg={8}></Grid>
-              <Grid item xs={6} sm={6} md={3} lg={3}>
-                <Typography variant="subtitle1" sx={{ fontWeight: 600 }}>
-                  Explore our blog
-                </Typography>
-              </Grid>
-              <Grid item xs={6} sm={6} md={1} lg={1}>
-                <KeyboardArrowRightIcon style={{ marginTop: 2 }} />
-              </Grid>
-            </Grid>
-          </div>
-        </Grid>
-      </Grid>
       <Grid container spacing={2}>
         <Grid container spacing={3}>
           {postData.map((e, i) => {
@@ -456,6 +473,7 @@ const AmazonSEO = () => {
               </Typography>
               <Button
                 variant="contained"
+                onClick={() => clickHandler(Root_Routes?.contact_us)}
                 sx={{
                   marginTop: 6,
                 }}
