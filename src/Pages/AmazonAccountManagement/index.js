@@ -1,6 +1,11 @@
 import React, {Fragment} from "react";
 import { Container } from "@mui/material";
 import { Button, Grid, Typography, Box } from "@mui/material";
+import { Root_Routes } from "../../Services/Routes/APP";
+import { useHistory } from "react-router-dom";
+import {
+  KeyboardArrowRight as KeyboardArrowRightIcon,
+} from "@mui/icons-material";
 import OurPartners from "../../Components/OurPartners";
 import "./style.css";
 
@@ -30,6 +35,10 @@ const blogPosts = [
   },
 ];
 const AmazonAccountMangement = () => {
+  const history = useHistory();
+  const clickHandler = (href) => {
+    history.push(href);   
+  };
   return (
     <Fragment>
       <Container>
@@ -95,6 +104,7 @@ const AmazonAccountMangement = () => {
           </Typography>{" "}
           <Button
             variant="contained"
+            onClick={() => clickHandler(Root_Routes?.contact_us)}
             sx={{
               marginTop: 5,
               borderRadius: 2,
@@ -455,6 +465,44 @@ const AmazonAccountMangement = () => {
           </Grid>
         </Grid>
       </Grid>
+      <Grid container spacing={2}>
+          
+          <Grid item xs={12} sm={12} md={6} lg={6}>
+            <div  className="latestPostsHeading">
+            <Typography
+              variant="h3"
+              gutterBottom
+              component="div"
+             
+              sx={{
+                marginTop: 6,
+                marginBottom: 6,
+                fontWeight: 800,
+              }}
+            >
+              Latest posts
+            </Typography>{" "}
+            </div>
+          </Grid>
+          <Grid item xs={12} sm={12} md={6} lg={6} sx={{ textAlign: "right" }}>
+          <div  className="exploreBlogBtn">
+            <Button
+              variant="text"
+              endIcon={<KeyboardArrowRightIcon />}
+              onClick={() => clickHandler(Root_Routes?.blog)}
+             
+              sx={{
+                marginTop: 8,
+                border: "none",
+                fontWeight: 600,
+              }}
+            >
+              Explore our blog
+            </Button>
+            </div>
+          </Grid>
+        
+        </Grid>
       <Grid container spacing={7} direction="row">
         {blogPosts?.map((sucess, index) => (
           <Grid
@@ -541,6 +589,7 @@ const AmazonAccountMangement = () => {
               </Typography>
               <Button
                 variant="contained"
+                onClick={() => clickHandler(Root_Routes?.contact_us)}
                 sx={{
                   marginTop: 6,
                 }}

@@ -1,7 +1,8 @@
 import React, { Fragment } from "react";
 import { Button, Grid, Typography, Box, CardMedia } from "@mui/material";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
-import LatestPosts from "../../Components/LatestPosts";
+import { Root_Routes } from "../../Services/Routes/APP";
+import { useHistory } from "react-router-dom";
 import Container from "@mui/material/Container";
 import OurPartners from "../../Components/OurPartners";
 import ThrivingAmazon from "../../Components/ThrivingAmazon";
@@ -35,6 +36,10 @@ const postData = [
   },
 ];
 const PlatformAdvertising = () => {
+  const history = useHistory();
+  const clickHandler = (href) => {
+    history.push(href);   
+  };
   return (
     <Fragment>
       <Container>
@@ -140,6 +145,16 @@ const PlatformAdvertising = () => {
                 you, the brand owner, and your team to meet brand standards and
                 optimize your potential for seller success.
               </Typography>{" "}
+              <Button
+            variant="contained"
+            onClick={() => clickHandler(Root_Routes?.contact_us)}
+            sx={{
+              marginTop: 5,
+              borderRadius: 2,
+            }}
+          >
+            Consult with an approved DSP Advertiser {" "}
+          </Button>{" "}
             </Grid>{" "}
             <Grid item xs={12} sm={12} md={6}>
               <img

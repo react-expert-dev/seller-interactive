@@ -1,5 +1,7 @@
 import React, {Fragment} from "react";
 import { Container } from "@mui/material";
+import { Root_Routes } from "../../Services/Routes/APP";
+import { useHistory } from "react-router-dom";
 import OurPartners from "../../Components/OurPartners";
 import ThrivingAmazon from "../../Components/ThrivingAmazon";
 //package import
@@ -9,6 +11,10 @@ import { Button, Grid, Typography, Box } from "@mui/material";
 //component
 
 const OurStory = () => {
+  const history = useHistory();
+  const clickHandler = (href) => {
+    history.push(href);   
+  };
   //render
 
   return (
@@ -62,6 +68,7 @@ const OurStory = () => {
           </Typography>
           <Button
             variant="contained"
+            onClick={() => clickHandler(Root_Routes?.contact_us)}
             sx={{
               marginTop: 5,
               borderRadius: 2,

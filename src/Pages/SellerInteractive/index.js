@@ -1,10 +1,16 @@
 import React, {Fragment} from "react";
 import { Container } from "@mui/material";
 import { Button, Box, Grid, Typography } from "@mui/material";
+import { Root_Routes } from "../../Services/Routes/APP";
+import { useHistory } from "react-router-dom";
 import KeyboardArrowRightIcon from "@mui/icons-material/KeyboardArrowRight";
 import OurPartners from "../../Components/OurPartners";
 import ThrivingAmazon from "../../Components/ThrivingAmazon";
 const SellerInteractives = () => {
+  const history = useHistory();
+  const clickHandler = (href) => {
+    history.push(href);   
+  };
   return (
     <Fragment>
       <Container>
@@ -22,6 +28,7 @@ const SellerInteractives = () => {
           </Typography>
           <Button
             variant="contained"
+            onClick={() => clickHandler(Root_Routes?.contact_us)}
             sx={{
               marginTop: 6,
             }}
@@ -125,6 +132,7 @@ const SellerInteractives = () => {
           <Button
             variant="outlined"
             endIcon={<KeyboardArrowRightIcon />}
+            onClick={() => clickHandler(Root_Routes?.contact_us)}
             sx={{
               marginTop: 4,
               border: "none",
@@ -174,6 +182,7 @@ const SellerInteractives = () => {
           <Button
             variant="outlined"
             endIcon={<KeyboardArrowRightIcon />}
+            onClick={() => clickHandler(Root_Routes?.contact_us)}
             sx={{
               marginTop: 4,
               border: "none",
@@ -208,6 +217,7 @@ const SellerInteractives = () => {
           <Button
             variant="outlined"
             endIcon={<KeyboardArrowRightIcon />}
+            onClick={() => clickHandler(Root_Routes?.contact_us)}
             sx={{
               marginTop: 4,
               border: "none",
@@ -257,6 +267,7 @@ const SellerInteractives = () => {
           <Button
             variant="outlined"
             endIcon={<KeyboardArrowRightIcon />}
+            onClick={() => clickHandler(Root_Routes?.contact_us)}
             sx={{
               marginTop: 4,
               border: "none",

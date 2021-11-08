@@ -3,10 +3,16 @@ import React from "react";
 //package import
 
 import { Container, Grid, Typography, Box, Button } from "@mui/material";
-
+import { Root_Routes } from "../../../Services/Routes/APP";
+import { useHistory } from "react-router-dom";
 //component
 
 const Hero = () => {
+  const history = useHistory();
+
+  const clickHandler = (href) => {
+    history.push(href);
+  };
   return (
     <Container>
       <Grid container>
@@ -35,6 +41,8 @@ const Hero = () => {
               <Button
                 variant={"contained"}
                 color={"primary"}
+                href="/contact_us"
+                onClick={() => clickHandler(Root_Routes?.contact_us)}
                 sx={{
                   paddingX: 4,
                   paddiingY: 0.5,
